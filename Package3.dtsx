@@ -1,0 +1,2060 @@
+﻿<?xml version="1.0"?>
+<DTS:Executable xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:refId="Package"
+  DTS:CreationDate="5/31/2023 3:19:04 PM"
+  DTS:CreationName="Microsoft.Package"
+  DTS:CreatorComputerName="DESKTOP-57MB2CN"
+  DTS:CreatorName="DESKTOP-57MB2CN\pc"
+  DTS:DTSID="{A3FA0142-4D5A-433A-AA41-032932BCF975}"
+  DTS:ExecutableType="Microsoft.Package"
+  DTS:LastModifiedProductVersion="15.0.2000.180"
+  DTS:LocaleID="1036"
+  DTS:ObjectName="Package3"
+  DTS:PackageType="5"
+  DTS:VersionBuild="7"
+  DTS:VersionGUID="{E1ABC9E1-BBD1-4BC3-9118-CD982AFCF67C}">
+  <DTS:Property
+    DTS:Name="PackageFormatVersion">8</DTS:Property>
+  <DTS:ConnectionManagers>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[DESKTOP-57MB2CN\INTELCIA.finaldatawarhouse.testconn]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{3B1B9FD4-EF16-4CFE-BF9B-FBE4AFAF7714}"
+      DTS:ObjectName="DESKTOP-57MB2CN\INTELCIA.finaldatawarhouse.testconn">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectRetryCount="1"
+          DTS:ConnectRetryInterval="5"
+          DTS:ConnectionString="Data Source=DESKTOP-57MB2CN\INTELCIA;User ID=testconn;Initial Catalog=finaldatawarhouse;Provider=SQLNCLI11.1;Auto Translate=False;">
+          <DTS:Password
+            DTS:Name="Password"
+            Sensitive="1"
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA7p+JL3ZUdEG0cIld2WHOEAAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAACDWdTh0D1vjSS5MMeBjSvL76gmjI6NL3y2U91EkZeLsQAAAAAOgAAAAAIAACAAAADIUkBjqmvPDQHm2pZ2XKIvENFiag+L+TLEzhHkvYMqBiAAAADjABcpi2T/chescCV0dBu9uN/CA8HcZuF2nR71Yy2Vu0AAAACPSUKffHmzoshVP6HxONWJvS9cKyc4TBzfgNzkxd7kzLksbEAhoGpvoFh32ekEDNO1gYIUDX9X2Uq7JR+UpAPP</DTS:Password>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[DESKTOP-57MB2CN\INTELCIA.finaldatawarhouse.testconn 1]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{99A90DEF-A9AE-4B08-9921-88AFBEC52E2A}"
+      DTS:ObjectName="DESKTOP-57MB2CN\INTELCIA.finaldatawarhouse.testconn 1">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectRetryCount="1"
+          DTS:ConnectRetryInterval="5"
+          DTS:ConnectionString="Data Source=DESKTOP-57MB2CN\INTELCIA;User ID=testconn;Initial Catalog=finaldatawarhouse;Provider=SQLNCLI11.1;Auto Translate=False;">
+          <DTS:Password
+            DTS:Name="Password"
+            Sensitive="1"
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA7p+JL3ZUdEG0cIld2WHOEAAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAAARN0ctGQ42zjk+0mc3zRLmiAkIksUXvj7Data5buvcvgAAAAAOgAAAAAIAACAAAAAcztKsTwkCwlSHYbVq7lSaUDqZ5SIJZHdNmC3F2qIcCSAAAABZXOPuQzCxiF6D7KgPF+CC0W91BSw9AzM1gLx+zZcrckAAAABR7BB21qtn2eO5ExhjPBy7nXLQ7UnSaXVciIVCuSOVRE6ykpyVgvSg7lGrBoWUs6zQCk6u9sCkJpCgCApodHc4</DTS:Password>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[DESKTOP-57MB2CN\INTELCIA.StagingArea.testconn]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{3DC1A8FB-05E6-4354-A1F8-62117CDC6403}"
+      DTS:ObjectName="DESKTOP-57MB2CN\INTELCIA.StagingArea.testconn">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectRetryCount="1"
+          DTS:ConnectRetryInterval="5"
+          DTS:ConnectionString="Data Source=DESKTOP-57MB2CN\INTELCIA;User ID=testconn;Initial Catalog=StagingArea;Provider=SQLNCLI11.1;Auto Translate=False;">
+          <DTS:Password
+            DTS:Name="Password"
+            Sensitive="1"
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA7p+JL3ZUdEG0cIld2WHOEAAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAABjsM915IAJaGWnIwk3Y6Z3qV78vplQQQY5C2zq7oFPZgAAAAAOgAAAAAIAACAAAACR4nAsbfZjmSXFiPsHD9vMG+bkoBND0e9Ty89TUkFhsSAAAAD1AokvKA+eVb/GfMkh82VaDRu96QmE3el5R52VXtjCpEAAAABHrAr+ImeLzEsNRd6FNUHRaED7UJWW1NmQk7uvQFZtmoWt+rB9SQ6UE13U3Zm8lpb0T4Uq8Dk8f8W919Xe3chL</DTS:Password>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[DESKTOP-57MB2CN\INTELCIA.StagingArea.testconn 1]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{C2F2C7CA-3E9A-43B0-BA10-BFF2EEFAACC6}"
+      DTS:ObjectName="DESKTOP-57MB2CN\INTELCIA.StagingArea.testconn 1">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectRetryCount="1"
+          DTS:ConnectRetryInterval="5"
+          DTS:ConnectionString="Data Source=DESKTOP-57MB2CN\INTELCIA;User ID=testconn;Initial Catalog=StagingArea;Provider=SQLNCLI11.1;Auto Translate=False;">
+          <DTS:Password
+            DTS:Name="Password"
+            Sensitive="1"
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA7p+JL3ZUdEG0cIld2WHOEAAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAABP8BYpY7lGtq6J/07Xn/Seyxdqh/A6UztmDopL50dv6AAAAAAOgAAAAAIAACAAAAD7u6dODJSuWI76C8bbdQOph15SKA92SBwogHmJZcd5uSAAAABa03uTaUdNX15V4N5nKCljvW0CKVjMD3JBFnldcftqEEAAAABYK8hdiwcJCKK4mOxrxYAy6pt8A8LzgQilF/OETNusH8300X4pLU693KYPXGu93cbrVHIbiUreRqGYoNhTWxhI</DTS:Password>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+  </DTS:ConnectionManagers>
+  <DTS:Variables />
+  <DTS:Executables>
+    <DTS:Executable
+      DTS:refId="Package\Tâche de flux de données"
+      DTS:CreationName="Microsoft.Pipeline"
+      DTS:Description="Tâche de flux de données"
+      DTS:DTSID="{A63556B7-7CED-48DE-A0EA-E47612E630D5}"
+      DTS:ExecutableType="Microsoft.Pipeline"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Tâche de flux de données"
+      DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <pipeline
+          version="1">
+          <components>
+            <component
+              refId="Package\Tâche de flux de données\DimAgent"
+              componentClassID="Microsoft.OLEDBDestination"
+              contactInfo="Destination OLE DB;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; Tous droits réservés; http://www.microsoft.com/sql/support;4"
+              description="Destination OLE DB"
+              name="DimAgent"
+              usesDispositions="true"
+              version="4">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="Nombre de secondes avant l'expiration d'une commande.  Une valeur égale à 0 indique un délai d'expiration infini."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="Spécifie le nom de l'objet de base de données utilisé pour ouvrir un ensemble de lignes."
+                  name="OpenRowset">[dbo].[Agents]</property>
+                <property
+                  dataType="System.String"
+                  description="Spécifie la variable contenant le nom de l'objet de base de données utilisé pour ouvrir un ensemble de lignes."
+                  name="OpenRowsetVariable"></property>
+                <property
+                  dataType="System.String"
+                  description="Commande SQL à exécuter."
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Spécifie la page de codes de la colonne à utiliser lorsque les informations de page de codes ne sont pas disponibles à partir de la source de données."
+                  name="DefaultCodePage">1252</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Force l'utilisation de la valeur de propriété DefaultCodePage lors de la description des données caractères."
+                  name="AlwaysUseDefaultCodePage">false</property>
+                <property
+                  dataType="System.Int32"
+                  description="Spécifie le mode utilisé pour accéder à la base de données."
+                  name="AccessMode"
+                  typeConverter="AccessMode">3</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indique si les valeurs fournies pour les colonnes d'identité seront copiées à la destination. Si la valeur est définie à False, les valeurs des colonnes d'identité seront générées automatiquement à la destination. Ne s'applique que si le chargement rapide est activé."
+                  name="FastLoadKeepIdentity">false</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indique si les colonnes contenant la valeur NULL auront cette valeur NULL copiée à la destination. Si la valeur est définie à False, les colonnes contenant la valeur NULL auront leurs valeurs par défaut insérées à la destination. Ne s'applique que si le chargement rapide est activé."
+                  name="FastLoadKeepNulls">false</property>
+                <property
+                  dataType="System.String"
+                  description="Spécifie les options à utiliser avec le chargement rapide.  Ne s'applique que si le chargement rapide est activé."
+                  name="FastLoadOptions">TABLOCK,CHECK_CONSTRAINTS</property>
+                <property
+                  dataType="System.Int32"
+                  description="Spécifie quand les validations sont émises pendant l'insertion des données.  Une valeur égale à 0 spécifie qu'une validation sera émise à la fin de l'insertion des données.  Ne s'applique que si le chargement rapide est activé."
+                  name="FastLoadMaxInsertCommitSize">2147483647</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Tâche de flux de données\DimAgent.Connections[OleDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[DESKTOP-57MB2CN\INTELCIA.finaldatawarhouse.testconn 1]"
+                  connectionManagerRefId="Package.ConnectionManagers[DESKTOP-57MB2CN\INTELCIA.finaldatawarhouse.testconn 1]"
+                  description="Connexion OLE DB en cours d'exécution utilisée pour accéder à la base de données."
+                  name="OleDbConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\Tâche de flux de données\DimAgent.Inputs[Entrée de destination OLE DB]"
+                  errorOrTruncationOperation="Insérer"
+                  errorRowDisposition="FailComponent"
+                  hasSideEffects="true"
+                  name="Entrée de destination OLE DB">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Tâche de flux de données\DimAgent.Inputs[Entrée de destination OLE DB].Columns[customerId]"
+                      cachedDataType="r8"
+                      cachedName="customerId"
+                      externalMetadataColumnId="Package\Tâche de flux de données\DimAgent.Inputs[Entrée de destination OLE DB].ExternalColumns[customerId]"
+                      lineageId="Package\Tâche de flux de données\StageAgent.Outputs[Sortie de source OLE DB].Columns[customerId]" />
+                    <inputColumn
+                      refId="Package\Tâche de flux de données\DimAgent.Inputs[Entrée de destination OLE DB].Columns[customer]"
+                      cachedDataType="wstr"
+                      cachedLength="255"
+                      cachedName="customer"
+                      externalMetadataColumnId="Package\Tâche de flux de données\DimAgent.Inputs[Entrée de destination OLE DB].ExternalColumns[customer]"
+                      lineageId="Package\Tâche de flux de données\StageAgent.Outputs[Sortie de source OLE DB].Columns[customer]" />
+                    <inputColumn
+                      refId="Package\Tâche de flux de données\DimAgent.Inputs[Entrée de destination OLE DB].Columns[Oid]"
+                      cachedDataType="wstr"
+                      cachedLength="255"
+                      cachedName="Oid"
+                      externalMetadataColumnId="Package\Tâche de flux de données\DimAgent.Inputs[Entrée de destination OLE DB].ExternalColumns[Oid]"
+                      lineageId="Package\Tâche de flux de données\StageAgent.Outputs[Sortie de source OLE DB].Columns[Oid]" />
+                    <inputColumn
+                      refId="Package\Tâche de flux de données\DimAgent.Inputs[Entrée de destination OLE DB].Columns[Ident]"
+                      cachedDataType="r8"
+                      cachedName="Ident"
+                      externalMetadataColumnId="Package\Tâche de flux de données\DimAgent.Inputs[Entrée de destination OLE DB].ExternalColumns[Ident]"
+                      lineageId="Package\Tâche de flux de données\StageAgent.Outputs[Sortie de source OLE DB].Columns[Ident]" />
+                    <inputColumn
+                      refId="Package\Tâche de flux de données\DimAgent.Inputs[Entrée de destination OLE DB].Columns[ReceptionGrp]"
+                      cachedDataType="nText"
+                      cachedName="ReceptionGrp"
+                      externalMetadataColumnId="Package\Tâche de flux de données\DimAgent.Inputs[Entrée de destination OLE DB].ExternalColumns[ReceptionGrp]"
+                      lineageId="Package\Tâche de flux de données\StageAgent.Outputs[Sortie de source OLE DB].Columns[ReceptionGrp]" />
+                    <inputColumn
+                      refId="Package\Tâche de flux de données\DimAgent.Inputs[Entrée de destination OLE DB].Columns[EntreCom]"
+                      cachedDataType="r8"
+                      cachedName="EntreCom"
+                      externalMetadataColumnId="Package\Tâche de flux de données\DimAgent.Inputs[Entrée de destination OLE DB].ExternalColumns[EntreCom]"
+                      lineageId="Package\Tâche de flux de données\StageAgent.Outputs[Sortie de source OLE DB].Columns[EntreCom]" />
+                    <inputColumn
+                      refId="Package\Tâche de flux de données\DimAgent.Inputs[Entrée de destination OLE DB].Columns[Options]"
+                      cachedDataType="wstr"
+                      cachedLength="255"
+                      cachedName="Options"
+                      externalMetadataColumnId="Package\Tâche de flux de données\DimAgent.Inputs[Entrée de destination OLE DB].ExternalColumns[Options]"
+                      lineageId="Package\Tâche de flux de données\StageAgent.Outputs[Sortie de source OLE DB].Columns[Options]" />
+                    <inputColumn
+                      refId="Package\Tâche de flux de données\DimAgent.Inputs[Entrée de destination OLE DB].Columns[LoginName]"
+                      cachedDataType="wstr"
+                      cachedLength="255"
+                      cachedName="LoginName"
+                      externalMetadataColumnId="Package\Tâche de flux de données\DimAgent.Inputs[Entrée de destination OLE DB].ExternalColumns[LoginName]"
+                      lineageId="Package\Tâche de flux de données\StageAgent.Outputs[Sortie de source OLE DB].Columns[LoginName]" />
+                    <inputColumn
+                      refId="Package\Tâche de flux de données\DimAgent.Inputs[Entrée de destination OLE DB].Columns[Profile]"
+                      cachedDataType="r8"
+                      cachedName="Profile"
+                      externalMetadataColumnId="Package\Tâche de flux de données\DimAgent.Inputs[Entrée de destination OLE DB].ExternalColumns[Profile]"
+                      lineageId="Package\Tâche de flux de données\StageAgent.Outputs[Sortie de source OLE DB].Columns[Profile]" />
+                    <inputColumn
+                      refId="Package\Tâche de flux de données\DimAgent.Inputs[Entrée de destination OLE DB].Columns[Rights]"
+                      cachedDataType="r8"
+                      cachedName="Rights"
+                      externalMetadataColumnId="Package\Tâche de flux de données\DimAgent.Inputs[Entrée de destination OLE DB].ExternalColumns[Rights]"
+                      lineageId="Package\Tâche de flux de données\StageAgent.Outputs[Sortie de source OLE DB].Columns[Rights]" />
+                    <inputColumn
+                      refId="Package\Tâche de flux de données\DimAgent.Inputs[Entrée de destination OLE DB].Columns[Password]"
+                      cachedDataType="wstr"
+                      cachedLength="255"
+                      cachedName="Password"
+                      externalMetadataColumnId="Package\Tâche de flux de données\DimAgent.Inputs[Entrée de destination OLE DB].ExternalColumns[Password]"
+                      lineageId="Package\Tâche de flux de données\StageAgent.Outputs[Sortie de source OLE DB].Columns[Password]" />
+                    <inputColumn
+                      refId="Package\Tâche de flux de données\DimAgent.Inputs[Entrée de destination OLE DB].Columns[GroupMember]"
+                      cachedDataType="r8"
+                      cachedName="GroupMember"
+                      externalMetadataColumnId="Package\Tâche de flux de données\DimAgent.Inputs[Entrée de destination OLE DB].ExternalColumns[GroupMember]"
+                      lineageId="Package\Tâche de flux de données\StageAgent.Outputs[Sortie de source OLE DB].Columns[GroupMember]" />
+                    <inputColumn
+                      refId="Package\Tâche de flux de données\DimAgent.Inputs[Entrée de destination OLE DB].Columns[ScriptFramesetUrl]"
+                      cachedDataType="wstr"
+                      cachedLength="255"
+                      cachedName="ScriptFramesetUrl"
+                      externalMetadataColumnId="Package\Tâche de flux de données\DimAgent.Inputs[Entrée de destination OLE DB].ExternalColumns[ScriptFramesetUrl]"
+                      lineageId="Package\Tâche de flux de données\StageAgent.Outputs[Sortie de source OLE DB].Columns[ScriptFramesetUrl]" />
+                    <inputColumn
+                      refId="Package\Tâche de flux de données\DimAgent.Inputs[Entrée de destination OLE DB].Columns[ScriptFramesetName]"
+                      cachedDataType="wstr"
+                      cachedLength="255"
+                      cachedName="ScriptFramesetName"
+                      externalMetadataColumnId="Package\Tâche de flux de données\DimAgent.Inputs[Entrée de destination OLE DB].ExternalColumns[ScriptFramesetName]"
+                      lineageId="Package\Tâche de flux de données\StageAgent.Outputs[Sortie de source OLE DB].Columns[ScriptFramesetName]" />
+                    <inputColumn
+                      refId="Package\Tâche de flux de données\DimAgent.Inputs[Entrée de destination OLE DB].Columns[MaxChatSessions]"
+                      cachedDataType="r8"
+                      cachedName="MaxChatSessions"
+                      externalMetadataColumnId="Package\Tâche de flux de données\DimAgent.Inputs[Entrée de destination OLE DB].ExternalColumns[MaxChatSessions]"
+                      lineageId="Package\Tâche de flux de données\StageAgent.Outputs[Sortie de source OLE DB].Columns[MaxChatSessions]" />
+                    <inputColumn
+                      refId="Package\Tâche de flux de données\DimAgent.Inputs[Entrée de destination OLE DB].Columns[MaxEmailSessions]"
+                      cachedDataType="r8"
+                      cachedName="MaxEmailSessions"
+                      externalMetadataColumnId="Package\Tâche de flux de données\DimAgent.Inputs[Entrée de destination OLE DB].ExternalColumns[MaxEmailSessions]"
+                      lineageId="Package\Tâche de flux de données\StageAgent.Outputs[Sortie de source OLE DB].Columns[MaxEmailSessions]" />
+                    <inputColumn
+                      refId="Package\Tâche de flux de données\DimAgent.Inputs[Entrée de destination OLE DB].Columns[AlwaysOnTop]"
+                      cachedDataType="r8"
+                      cachedName="AlwaysOnTop"
+                      externalMetadataColumnId="Package\Tâche de flux de données\DimAgent.Inputs[Entrée de destination OLE DB].ExternalColumns[AlwaysOnTop]"
+                      lineageId="Package\Tâche de flux de données\StageAgent.Outputs[Sortie de source OLE DB].Columns[AlwaysOnTop]" />
+                    <inputColumn
+                      refId="Package\Tâche de flux de données\DimAgent.Inputs[Entrée de destination OLE DB].Columns[FullScreen]"
+                      cachedDataType="r8"
+                      cachedName="FullScreen"
+                      externalMetadataColumnId="Package\Tâche de flux de données\DimAgent.Inputs[Entrée de destination OLE DB].ExternalColumns[FullScreen]"
+                      lineageId="Package\Tâche de flux de données\StageAgent.Outputs[Sortie de source OLE DB].Columns[FullScreen]" />
+                    <inputColumn
+                      refId="Package\Tâche de flux de données\DimAgent.Inputs[Entrée de destination OLE DB].Columns[WorkspaceWidth]"
+                      cachedDataType="r8"
+                      cachedName="WorkspaceWidth"
+                      externalMetadataColumnId="Package\Tâche de flux de données\DimAgent.Inputs[Entrée de destination OLE DB].ExternalColumns[WorkspaceWidth]"
+                      lineageId="Package\Tâche de flux de données\StageAgent.Outputs[Sortie de source OLE DB].Columns[WorkspaceWidth]" />
+                    <inputColumn
+                      refId="Package\Tâche de flux de données\DimAgent.Inputs[Entrée de destination OLE DB].Columns[WorkspaceHeight]"
+                      cachedDataType="r8"
+                      cachedName="WorkspaceHeight"
+                      externalMetadataColumnId="Package\Tâche de flux de données\DimAgent.Inputs[Entrée de destination OLE DB].ExternalColumns[WorkspaceHeight]"
+                      lineageId="Package\Tâche de flux de données\StageAgent.Outputs[Sortie de source OLE DB].Columns[WorkspaceHeight]" />
+                    <inputColumn
+                      refId="Package\Tâche de flux de données\DimAgent.Inputs[Entrée de destination OLE DB].Columns[ReadyAtLogin]"
+                      cachedDataType="r8"
+                      cachedName="ReadyAtLogin"
+                      externalMetadataColumnId="Package\Tâche de flux de données\DimAgent.Inputs[Entrée de destination OLE DB].ExternalColumns[ReadyAtLogin]"
+                      lineageId="Package\Tâche de flux de données\StageAgent.Outputs[Sortie de source OLE DB].Columns[ReadyAtLogin]" />
+                    <inputColumn
+                      refId="Package\Tâche de flux de données\DimAgent.Inputs[Entrée de destination OLE DB].Columns[WorkspaceOid]"
+                      cachedDataType="wstr"
+                      cachedLength="255"
+                      cachedName="WorkspaceOid"
+                      externalMetadataColumnId="Package\Tâche de flux de données\DimAgent.Inputs[Entrée de destination OLE DB].ExternalColumns[WorkspaceOid]"
+                      lineageId="Package\Tâche de flux de données\StageAgent.Outputs[Sortie de source OLE DB].Columns[WorkspaceOid]" />
+                    <inputColumn
+                      refId="Package\Tâche de flux de données\DimAgent.Inputs[Entrée de destination OLE DB].Columns[CTISkills]"
+                      cachedDataType="wstr"
+                      cachedLength="255"
+                      cachedName="CTISkills"
+                      externalMetadataColumnId="Package\Tâche de flux de données\DimAgent.Inputs[Entrée de destination OLE DB].ExternalColumns[CTISkills]"
+                      lineageId="Package\Tâche de flux de données\StageAgent.Outputs[Sortie de source OLE DB].Columns[CTISkills]" />
+                    <inputColumn
+                      refId="Package\Tâche de flux de données\DimAgent.Inputs[Entrée de destination OLE DB].Columns[OutCampaigns]"
+                      cachedDataType="nText"
+                      cachedName="OutCampaigns"
+                      externalMetadataColumnId="Package\Tâche de flux de données\DimAgent.Inputs[Entrée de destination OLE DB].ExternalColumns[OutCampaigns]"
+                      lineageId="Package\Tâche de flux de données\StageAgent.Outputs[Sortie de source OLE DB].Columns[OutCampaigns]" />
+                    <inputColumn
+                      refId="Package\Tâche de flux de données\DimAgent.Inputs[Entrée de destination OLE DB].Columns[CoachRightLevel]"
+                      cachedDataType="r8"
+                      cachedName="CoachRightLevel"
+                      externalMetadataColumnId="Package\Tâche de flux de données\DimAgent.Inputs[Entrée de destination OLE DB].ExternalColumns[CoachRightLevel]"
+                      lineageId="Package\Tâche de flux de données\StageAgent.Outputs[Sortie de source OLE DB].Columns[CoachRightLevel]" />
+                    <inputColumn
+                      refId="Package\Tâche de flux de données\DimAgent.Inputs[Entrée de destination OLE DB].Columns[CurrentOutQueue]"
+                      cachedDataType="r8"
+                      cachedName="CurrentOutQueue"
+                      externalMetadataColumnId="Package\Tâche de flux de données\DimAgent.Inputs[Entrée de destination OLE DB].ExternalColumns[CurrentOutQueue]"
+                      lineageId="Package\Tâche de flux de données\StageAgent.Outputs[Sortie de source OLE DB].Columns[CurrentOutQueue]" />
+                    <inputColumn
+                      refId="Package\Tâche de flux de données\DimAgent.Inputs[Entrée de destination OLE DB].Columns[WorkspaceAffectationExt]"
+                      cachedDataType="wstr"
+                      cachedLength="255"
+                      cachedName="WorkspaceAffectationExt"
+                      externalMetadataColumnId="Package\Tâche de flux de données\DimAgent.Inputs[Entrée de destination OLE DB].ExternalColumns[WorkspaceAffectationExt]"
+                      lineageId="Package\Tâche de flux de données\StageAgent.Outputs[Sortie de source OLE DB].Columns[WorkspaceAffectationExt]" />
+                    <inputColumn
+                      refId="Package\Tâche de flux de données\DimAgent.Inputs[Entrée de destination OLE DB].Columns[DefaultOutCampaign]"
+                      cachedDataType="wstr"
+                      cachedLength="255"
+                      cachedName="DefaultOutCampaign"
+                      externalMetadataColumnId="Package\Tâche de flux de données\DimAgent.Inputs[Entrée de destination OLE DB].ExternalColumns[DefaultOutCampaign]"
+                      lineageId="Package\Tâche de flux de données\StageAgent.Outputs[Sortie de source OLE DB].Columns[DefaultOutCampaign]" />
+                    <inputColumn
+                      refId="Package\Tâche de flux de données\DimAgent.Inputs[Entrée de destination OLE DB].Columns[IsReAssigned]"
+                      cachedDataType="r8"
+                      cachedName="IsReAssigned"
+                      externalMetadataColumnId="Package\Tâche de flux de données\DimAgent.Inputs[Entrée de destination OLE DB].ExternalColumns[IsReAssigned]"
+                      lineageId="Package\Tâche de flux de données\StageAgent.Outputs[Sortie de source OLE DB].Columns[IsReAssigned]" />
+                    <inputColumn
+                      refId="Package\Tâche de flux de données\DimAgent.Inputs[Entrée de destination OLE DB].Columns[AgentLightRight]"
+                      cachedDataType="r8"
+                      cachedName="AgentLightRight"
+                      externalMetadataColumnId="Package\Tâche de flux de données\DimAgent.Inputs[Entrée de destination OLE DB].ExternalColumns[AgentLightRight]"
+                      lineageId="Package\Tâche de flux de données\StageAgent.Outputs[Sortie de source OLE DB].Columns[AgentLightRight]" />
+                    <inputColumn
+                      refId="Package\Tâche de flux de données\DimAgent.Inputs[Entrée de destination OLE DB].Columns[AgentLightPlanningOid]"
+                      cachedDataType="wstr"
+                      cachedLength="255"
+                      cachedName="AgentLightPlanningOid"
+                      externalMetadataColumnId="Package\Tâche de flux de données\DimAgent.Inputs[Entrée de destination OLE DB].ExternalColumns[AgentLightPlanningOid]"
+                      lineageId="Package\Tâche de flux de données\StageAgent.Outputs[Sortie de source OLE DB].Columns[AgentLightPlanningOid]" />
+                    <inputColumn
+                      refId="Package\Tâche de flux de données\DimAgent.Inputs[Entrée de destination OLE DB].Columns[AgentLightExtensionId]"
+                      cachedDataType="r8"
+                      cachedName="AgentLightExtensionId"
+                      externalMetadataColumnId="Package\Tâche de flux de données\DimAgent.Inputs[Entrée de destination OLE DB].ExternalColumns[AgentLightExtensionId]"
+                      lineageId="Package\Tâche de flux de données\StageAgent.Outputs[Sortie de source OLE DB].Columns[AgentLightExtensionId]" />
+                    <inputColumn
+                      refId="Package\Tâche de flux de données\DimAgent.Inputs[Entrée de destination OLE DB].Columns[RingMaxDialingDuration]"
+                      cachedDataType="r8"
+                      cachedName="RingMaxDialingDuration"
+                      externalMetadataColumnId="Package\Tâche de flux de données\DimAgent.Inputs[Entrée de destination OLE DB].ExternalColumns[RingMaxDialingDuration]"
+                      lineageId="Package\Tâche de flux de données\StageAgent.Outputs[Sortie de source OLE DB].Columns[RingMaxDialingDuration]" />
+                    <inputColumn
+                      refId="Package\Tâche de flux de données\DimAgent.Inputs[Entrée de destination OLE DB].Columns[RingMaxDialingAttempts]"
+                      cachedDataType="r8"
+                      cachedName="RingMaxDialingAttempts"
+                      externalMetadataColumnId="Package\Tâche de flux de données\DimAgent.Inputs[Entrée de destination OLE DB].ExternalColumns[RingMaxDialingAttempts]"
+                      lineageId="Package\Tâche de flux de données\StageAgent.Outputs[Sortie de source OLE DB].Columns[RingMaxDialingAttempts]" />
+                    <inputColumn
+                      refId="Package\Tâche de flux de données\DimAgent.Inputs[Entrée de destination OLE DB].Columns[MaxSmsSessions]"
+                      cachedDataType="r8"
+                      cachedName="MaxSmsSessions"
+                      externalMetadataColumnId="Package\Tâche de flux de données\DimAgent.Inputs[Entrée de destination OLE DB].ExternalColumns[MaxSmsSessions]"
+                      lineageId="Package\Tâche de flux de données\StageAgent.Outputs[Sortie de source OLE DB].Columns[MaxSmsSessions]" />
+                    <inputColumn
+                      refId="Package\Tâche de flux de données\DimAgent.Inputs[Entrée de destination OLE DB].Columns[PasswordDate]"
+                      cachedDataType="wstr"
+                      cachedLength="255"
+                      cachedName="PasswordDate"
+                      externalMetadataColumnId="Package\Tâche de flux de données\DimAgent.Inputs[Entrée de destination OLE DB].ExternalColumns[PasswordDate]"
+                      lineageId="Package\Tâche de flux de données\StageAgent.Outputs[Sortie de source OLE DB].Columns[PasswordDate]" />
+                    <inputColumn
+                      refId="Package\Tâche de flux de données\DimAgent.Inputs[Entrée de destination OLE DB].Columns[ProfileDetailed]"
+                      cachedDataType="wstr"
+                      cachedLength="255"
+                      cachedName="ProfileDetailed"
+                      externalMetadataColumnId="Package\Tâche de flux de données\DimAgent.Inputs[Entrée de destination OLE DB].ExternalColumns[ProfileDetailed]"
+                      lineageId="Package\Tâche de flux de données\StageAgent.Outputs[Sortie de source OLE DB].Columns[ProfileDetailed]" />
+                    <inputColumn
+                      refId="Package\Tâche de flux de données\DimAgent.Inputs[Entrée de destination OLE DB].Columns[ProfileDetailedWithDesc]"
+                      cachedDataType="wstr"
+                      cachedLength="255"
+                      cachedName="ProfileDetailedWithDesc"
+                      externalMetadataColumnId="Package\Tâche de flux de données\DimAgent.Inputs[Entrée de destination OLE DB].ExternalColumns[ProfileDetailedWithDesc]"
+                      lineageId="Package\Tâche de flux de données\StageAgent.Outputs[Sortie de source OLE DB].Columns[ProfileDetailedWithDesc]" />
+                    <inputColumn
+                      refId="Package\Tâche de flux de données\DimAgent.Inputs[Entrée de destination OLE DB].Columns[MaxSocialNetworkSessions]"
+                      cachedDataType="r8"
+                      cachedName="MaxSocialNetworkSessions"
+                      externalMetadataColumnId="Package\Tâche de flux de données\DimAgent.Inputs[Entrée de destination OLE DB].ExternalColumns[MaxSocialNetworkSessions]"
+                      lineageId="Package\Tâche de flux de données\StageAgent.Outputs[Sortie de source OLE DB].Columns[MaxSocialNetworkSessions]" />
+                    <inputColumn
+                      refId="Package\Tâche de flux de données\DimAgent.Inputs[Entrée de destination OLE DB].Columns[Gender]"
+                      cachedDataType="wstr"
+                      cachedLength="255"
+                      cachedName="Gender"
+                      externalMetadataColumnId="Package\Tâche de flux de données\DimAgent.Inputs[Entrée de destination OLE DB].ExternalColumns[Gender]"
+                      lineageId="Package\Tâche de flux de données\StageAgent.Outputs[Sortie de source OLE DB].Columns[Gender]" />
+                    <inputColumn
+                      refId="Package\Tâche de flux de données\DimAgent.Inputs[Entrée de destination OLE DB].Columns[FirstName]"
+                      cachedDataType="r8"
+                      cachedName="FirstName"
+                      externalMetadataColumnId="Package\Tâche de flux de données\DimAgent.Inputs[Entrée de destination OLE DB].ExternalColumns[FirstName]"
+                      lineageId="Package\Tâche de flux de données\StageAgent.Outputs[Sortie de source OLE DB].Columns[FirstName]" />
+                    <inputColumn
+                      refId="Package\Tâche de flux de données\DimAgent.Inputs[Entrée de destination OLE DB].Columns[LastName]"
+                      cachedDataType="wstr"
+                      cachedLength="255"
+                      cachedName="LastName"
+                      externalMetadataColumnId="Package\Tâche de flux de données\DimAgent.Inputs[Entrée de destination OLE DB].ExternalColumns[LastName]"
+                      lineageId="Package\Tâche de flux de données\StageAgent.Outputs[Sortie de source OLE DB].Columns[LastName]" />
+                    <inputColumn
+                      refId="Package\Tâche de flux de données\DimAgent.Inputs[Entrée de destination OLE DB].Columns[Address]"
+                      cachedDataType="wstr"
+                      cachedLength="255"
+                      cachedName="Address"
+                      externalMetadataColumnId="Package\Tâche de flux de données\DimAgent.Inputs[Entrée de destination OLE DB].ExternalColumns[Address]"
+                      lineageId="Package\Tâche de flux de données\StageAgent.Outputs[Sortie de source OLE DB].Columns[Address]" />
+                    <inputColumn
+                      refId="Package\Tâche de flux de données\DimAgent.Inputs[Entrée de destination OLE DB].Columns[CP]"
+                      cachedDataType="wstr"
+                      cachedLength="255"
+                      cachedName="CP"
+                      externalMetadataColumnId="Package\Tâche de flux de données\DimAgent.Inputs[Entrée de destination OLE DB].ExternalColumns[CP]"
+                      lineageId="Package\Tâche de flux de données\StageAgent.Outputs[Sortie de source OLE DB].Columns[CP]" />
+                    <inputColumn
+                      refId="Package\Tâche de flux de données\DimAgent.Inputs[Entrée de destination OLE DB].Columns[City]"
+                      cachedDataType="wstr"
+                      cachedLength="255"
+                      cachedName="City"
+                      externalMetadataColumnId="Package\Tâche de flux de données\DimAgent.Inputs[Entrée de destination OLE DB].ExternalColumns[City]"
+                      lineageId="Package\Tâche de flux de données\StageAgent.Outputs[Sortie de source OLE DB].Columns[City]" />
+                    <inputColumn
+                      refId="Package\Tâche de flux de données\DimAgent.Inputs[Entrée de destination OLE DB].Columns[Email]"
+                      cachedDataType="wstr"
+                      cachedLength="255"
+                      cachedName="Email"
+                      externalMetadataColumnId="Package\Tâche de flux de données\DimAgent.Inputs[Entrée de destination OLE DB].ExternalColumns[Email]"
+                      lineageId="Package\Tâche de flux de données\StageAgent.Outputs[Sortie de source OLE DB].Columns[Email]" />
+                    <inputColumn
+                      refId="Package\Tâche de flux de données\DimAgent.Inputs[Entrée de destination OLE DB].Columns[Phone]"
+                      cachedDataType="wstr"
+                      cachedLength="255"
+                      cachedName="Phone"
+                      externalMetadataColumnId="Package\Tâche de flux de données\DimAgent.Inputs[Entrée de destination OLE DB].ExternalColumns[Phone]"
+                      lineageId="Package\Tâche de flux de données\StageAgent.Outputs[Sortie de source OLE DB].Columns[Phone]" />
+                    <inputColumn
+                      refId="Package\Tâche de flux de données\DimAgent.Inputs[Entrée de destination OLE DB].Columns[Phone1]"
+                      cachedDataType="wstr"
+                      cachedLength="255"
+                      cachedName="Phone1"
+                      externalMetadataColumnId="Package\Tâche de flux de données\DimAgent.Inputs[Entrée de destination OLE DB].ExternalColumns[Phone1]"
+                      lineageId="Package\Tâche de flux de données\StageAgent.Outputs[Sortie de source OLE DB].Columns[Phone1]" />
+                    <inputColumn
+                      refId="Package\Tâche de flux de données\DimAgent.Inputs[Entrée de destination OLE DB].Columns[Phone2]"
+                      cachedDataType="wstr"
+                      cachedLength="255"
+                      cachedName="Phone2"
+                      externalMetadataColumnId="Package\Tâche de flux de données\DimAgent.Inputs[Entrée de destination OLE DB].ExternalColumns[Phone2]"
+                      lineageId="Package\Tâche de flux de données\StageAgent.Outputs[Sortie de source OLE DB].Columns[Phone2]" />
+                    <inputColumn
+                      refId="Package\Tâche de flux de données\DimAgent.Inputs[Entrée de destination OLE DB].Columns[Birthday]"
+                      cachedDataType="wstr"
+                      cachedLength="255"
+                      cachedName="Birthday"
+                      externalMetadataColumnId="Package\Tâche de flux de données\DimAgent.Inputs[Entrée de destination OLE DB].ExternalColumns[Birthday]"
+                      lineageId="Package\Tâche de flux de données\StageAgent.Outputs[Sortie de source OLE DB].Columns[Birthday]" />
+                    <inputColumn
+                      refId="Package\Tâche de flux de données\DimAgent.Inputs[Entrée de destination OLE DB].Columns[Picture]"
+                      cachedDataType="wstr"
+                      cachedLength="255"
+                      cachedName="Picture"
+                      externalMetadataColumnId="Package\Tâche de flux de données\DimAgent.Inputs[Entrée de destination OLE DB].ExternalColumns[Picture]"
+                      lineageId="Package\Tâche de flux de données\StageAgent.Outputs[Sortie de source OLE DB].Columns[Picture]" />
+                    <inputColumn
+                      refId="Package\Tâche de flux de données\DimAgent.Inputs[Entrée de destination OLE DB].Columns[customerOid]"
+                      cachedDataType="wstr"
+                      cachedLength="255"
+                      cachedName="customerOid"
+                      externalMetadataColumnId="Package\Tâche de flux de données\DimAgent.Inputs[Entrée de destination OLE DB].ExternalColumns[customerOid]"
+                      lineageId="Package\Tâche de flux de données\StageAgent.Outputs[Sortie de source OLE DB].Columns[customerOid]" />
+                    <inputColumn
+                      refId="Package\Tâche de flux de données\DimAgent.Inputs[Entrée de destination OLE DB].Columns[createat]"
+                      cachedDataType="wstr"
+                      cachedLength="255"
+                      cachedName="createat"
+                      externalMetadataColumnId="Package\Tâche de flux de données\DimAgent.Inputs[Entrée de destination OLE DB].ExternalColumns[createat]"
+                      lineageId="Package\Tâche de flux de données\StageAgent.Outputs[Sortie de source OLE DB].Columns[createat]" />
+                    <inputColumn
+                      refId="Package\Tâche de flux de données\DimAgent.Inputs[Entrée de destination OLE DB].Columns[deleteat]"
+                      cachedDataType="wstr"
+                      cachedLength="255"
+                      cachedName="deleteat"
+                      externalMetadataColumnId="Package\Tâche de flux de données\DimAgent.Inputs[Entrée de destination OLE DB].ExternalColumns[deleteat]"
+                      lineageId="Package\Tâche de flux de données\StageAgent.Outputs[Sortie de source OLE DB].Columns[deleteat]" />
+                  </inputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Tâche de flux de données\DimAgent.Inputs[Entrée de destination OLE DB].ExternalColumns[customerId]"
+                      dataType="r8"
+                      name="customerId" />
+                    <externalMetadataColumn
+                      refId="Package\Tâche de flux de données\DimAgent.Inputs[Entrée de destination OLE DB].ExternalColumns[customer]"
+                      dataType="wstr"
+                      length="255"
+                      name="customer" />
+                    <externalMetadataColumn
+                      refId="Package\Tâche de flux de données\DimAgent.Inputs[Entrée de destination OLE DB].ExternalColumns[Oid]"
+                      dataType="wstr"
+                      length="255"
+                      name="Oid" />
+                    <externalMetadataColumn
+                      refId="Package\Tâche de flux de données\DimAgent.Inputs[Entrée de destination OLE DB].ExternalColumns[Ident]"
+                      dataType="r8"
+                      name="Ident" />
+                    <externalMetadataColumn
+                      refId="Package\Tâche de flux de données\DimAgent.Inputs[Entrée de destination OLE DB].ExternalColumns[ReceptionGrp]"
+                      dataType="nText"
+                      name="ReceptionGrp" />
+                    <externalMetadataColumn
+                      refId="Package\Tâche de flux de données\DimAgent.Inputs[Entrée de destination OLE DB].ExternalColumns[EntreCom]"
+                      dataType="r8"
+                      name="EntreCom" />
+                    <externalMetadataColumn
+                      refId="Package\Tâche de flux de données\DimAgent.Inputs[Entrée de destination OLE DB].ExternalColumns[Options]"
+                      dataType="wstr"
+                      length="255"
+                      name="Options" />
+                    <externalMetadataColumn
+                      refId="Package\Tâche de flux de données\DimAgent.Inputs[Entrée de destination OLE DB].ExternalColumns[LoginName]"
+                      dataType="wstr"
+                      length="255"
+                      name="LoginName" />
+                    <externalMetadataColumn
+                      refId="Package\Tâche de flux de données\DimAgent.Inputs[Entrée de destination OLE DB].ExternalColumns[Profile]"
+                      dataType="r8"
+                      name="Profile" />
+                    <externalMetadataColumn
+                      refId="Package\Tâche de flux de données\DimAgent.Inputs[Entrée de destination OLE DB].ExternalColumns[Rights]"
+                      dataType="r8"
+                      name="Rights" />
+                    <externalMetadataColumn
+                      refId="Package\Tâche de flux de données\DimAgent.Inputs[Entrée de destination OLE DB].ExternalColumns[Password]"
+                      dataType="wstr"
+                      length="255"
+                      name="Password" />
+                    <externalMetadataColumn
+                      refId="Package\Tâche de flux de données\DimAgent.Inputs[Entrée de destination OLE DB].ExternalColumns[GroupMember]"
+                      dataType="r8"
+                      name="GroupMember" />
+                    <externalMetadataColumn
+                      refId="Package\Tâche de flux de données\DimAgent.Inputs[Entrée de destination OLE DB].ExternalColumns[ScriptFramesetUrl]"
+                      dataType="wstr"
+                      length="255"
+                      name="ScriptFramesetUrl" />
+                    <externalMetadataColumn
+                      refId="Package\Tâche de flux de données\DimAgent.Inputs[Entrée de destination OLE DB].ExternalColumns[ScriptFramesetName]"
+                      dataType="wstr"
+                      length="255"
+                      name="ScriptFramesetName" />
+                    <externalMetadataColumn
+                      refId="Package\Tâche de flux de données\DimAgent.Inputs[Entrée de destination OLE DB].ExternalColumns[MaxChatSessions]"
+                      dataType="r8"
+                      name="MaxChatSessions" />
+                    <externalMetadataColumn
+                      refId="Package\Tâche de flux de données\DimAgent.Inputs[Entrée de destination OLE DB].ExternalColumns[MaxEmailSessions]"
+                      dataType="r8"
+                      name="MaxEmailSessions" />
+                    <externalMetadataColumn
+                      refId="Package\Tâche de flux de données\DimAgent.Inputs[Entrée de destination OLE DB].ExternalColumns[AlwaysOnTop]"
+                      dataType="r8"
+                      name="AlwaysOnTop" />
+                    <externalMetadataColumn
+                      refId="Package\Tâche de flux de données\DimAgent.Inputs[Entrée de destination OLE DB].ExternalColumns[FullScreen]"
+                      dataType="r8"
+                      name="FullScreen" />
+                    <externalMetadataColumn
+                      refId="Package\Tâche de flux de données\DimAgent.Inputs[Entrée de destination OLE DB].ExternalColumns[WorkspaceWidth]"
+                      dataType="r8"
+                      name="WorkspaceWidth" />
+                    <externalMetadataColumn
+                      refId="Package\Tâche de flux de données\DimAgent.Inputs[Entrée de destination OLE DB].ExternalColumns[WorkspaceHeight]"
+                      dataType="r8"
+                      name="WorkspaceHeight" />
+                    <externalMetadataColumn
+                      refId="Package\Tâche de flux de données\DimAgent.Inputs[Entrée de destination OLE DB].ExternalColumns[ReadyAtLogin]"
+                      dataType="r8"
+                      name="ReadyAtLogin" />
+                    <externalMetadataColumn
+                      refId="Package\Tâche de flux de données\DimAgent.Inputs[Entrée de destination OLE DB].ExternalColumns[WorkspaceOid]"
+                      dataType="wstr"
+                      length="255"
+                      name="WorkspaceOid" />
+                    <externalMetadataColumn
+                      refId="Package\Tâche de flux de données\DimAgent.Inputs[Entrée de destination OLE DB].ExternalColumns[CTISkills]"
+                      dataType="wstr"
+                      length="255"
+                      name="CTISkills" />
+                    <externalMetadataColumn
+                      refId="Package\Tâche de flux de données\DimAgent.Inputs[Entrée de destination OLE DB].ExternalColumns[OutCampaigns]"
+                      dataType="nText"
+                      name="OutCampaigns" />
+                    <externalMetadataColumn
+                      refId="Package\Tâche de flux de données\DimAgent.Inputs[Entrée de destination OLE DB].ExternalColumns[CoachRightLevel]"
+                      dataType="r8"
+                      name="CoachRightLevel" />
+                    <externalMetadataColumn
+                      refId="Package\Tâche de flux de données\DimAgent.Inputs[Entrée de destination OLE DB].ExternalColumns[CurrentOutQueue]"
+                      dataType="r8"
+                      name="CurrentOutQueue" />
+                    <externalMetadataColumn
+                      refId="Package\Tâche de flux de données\DimAgent.Inputs[Entrée de destination OLE DB].ExternalColumns[WorkspaceAffectationExt]"
+                      dataType="wstr"
+                      length="255"
+                      name="WorkspaceAffectationExt" />
+                    <externalMetadataColumn
+                      refId="Package\Tâche de flux de données\DimAgent.Inputs[Entrée de destination OLE DB].ExternalColumns[DefaultOutCampaign]"
+                      dataType="wstr"
+                      length="255"
+                      name="DefaultOutCampaign" />
+                    <externalMetadataColumn
+                      refId="Package\Tâche de flux de données\DimAgent.Inputs[Entrée de destination OLE DB].ExternalColumns[IsReAssigned]"
+                      dataType="r8"
+                      name="IsReAssigned" />
+                    <externalMetadataColumn
+                      refId="Package\Tâche de flux de données\DimAgent.Inputs[Entrée de destination OLE DB].ExternalColumns[AgentLightRight]"
+                      dataType="r8"
+                      name="AgentLightRight" />
+                    <externalMetadataColumn
+                      refId="Package\Tâche de flux de données\DimAgent.Inputs[Entrée de destination OLE DB].ExternalColumns[AgentLightPlanningOid]"
+                      dataType="wstr"
+                      length="255"
+                      name="AgentLightPlanningOid" />
+                    <externalMetadataColumn
+                      refId="Package\Tâche de flux de données\DimAgent.Inputs[Entrée de destination OLE DB].ExternalColumns[AgentLightExtensionId]"
+                      dataType="r8"
+                      name="AgentLightExtensionId" />
+                    <externalMetadataColumn
+                      refId="Package\Tâche de flux de données\DimAgent.Inputs[Entrée de destination OLE DB].ExternalColumns[RingMaxDialingDuration]"
+                      dataType="r8"
+                      name="RingMaxDialingDuration" />
+                    <externalMetadataColumn
+                      refId="Package\Tâche de flux de données\DimAgent.Inputs[Entrée de destination OLE DB].ExternalColumns[RingMaxDialingAttempts]"
+                      dataType="r8"
+                      name="RingMaxDialingAttempts" />
+                    <externalMetadataColumn
+                      refId="Package\Tâche de flux de données\DimAgent.Inputs[Entrée de destination OLE DB].ExternalColumns[MaxSmsSessions]"
+                      dataType="r8"
+                      name="MaxSmsSessions" />
+                    <externalMetadataColumn
+                      refId="Package\Tâche de flux de données\DimAgent.Inputs[Entrée de destination OLE DB].ExternalColumns[PasswordDate]"
+                      dataType="wstr"
+                      length="255"
+                      name="PasswordDate" />
+                    <externalMetadataColumn
+                      refId="Package\Tâche de flux de données\DimAgent.Inputs[Entrée de destination OLE DB].ExternalColumns[ProfileDetailed]"
+                      dataType="wstr"
+                      length="255"
+                      name="ProfileDetailed" />
+                    <externalMetadataColumn
+                      refId="Package\Tâche de flux de données\DimAgent.Inputs[Entrée de destination OLE DB].ExternalColumns[ProfileDetailedWithDesc]"
+                      dataType="wstr"
+                      length="255"
+                      name="ProfileDetailedWithDesc" />
+                    <externalMetadataColumn
+                      refId="Package\Tâche de flux de données\DimAgent.Inputs[Entrée de destination OLE DB].ExternalColumns[MaxSocialNetworkSessions]"
+                      dataType="r8"
+                      name="MaxSocialNetworkSessions" />
+                    <externalMetadataColumn
+                      refId="Package\Tâche de flux de données\DimAgent.Inputs[Entrée de destination OLE DB].ExternalColumns[Gender]"
+                      dataType="wstr"
+                      length="255"
+                      name="Gender" />
+                    <externalMetadataColumn
+                      refId="Package\Tâche de flux de données\DimAgent.Inputs[Entrée de destination OLE DB].ExternalColumns[FirstName]"
+                      dataType="r8"
+                      name="FirstName" />
+                    <externalMetadataColumn
+                      refId="Package\Tâche de flux de données\DimAgent.Inputs[Entrée de destination OLE DB].ExternalColumns[LastName]"
+                      dataType="wstr"
+                      length="255"
+                      name="LastName" />
+                    <externalMetadataColumn
+                      refId="Package\Tâche de flux de données\DimAgent.Inputs[Entrée de destination OLE DB].ExternalColumns[Address]"
+                      dataType="wstr"
+                      length="255"
+                      name="Address" />
+                    <externalMetadataColumn
+                      refId="Package\Tâche de flux de données\DimAgent.Inputs[Entrée de destination OLE DB].ExternalColumns[CP]"
+                      dataType="wstr"
+                      length="255"
+                      name="CP" />
+                    <externalMetadataColumn
+                      refId="Package\Tâche de flux de données\DimAgent.Inputs[Entrée de destination OLE DB].ExternalColumns[City]"
+                      dataType="wstr"
+                      length="255"
+                      name="City" />
+                    <externalMetadataColumn
+                      refId="Package\Tâche de flux de données\DimAgent.Inputs[Entrée de destination OLE DB].ExternalColumns[Email]"
+                      dataType="wstr"
+                      length="255"
+                      name="Email" />
+                    <externalMetadataColumn
+                      refId="Package\Tâche de flux de données\DimAgent.Inputs[Entrée de destination OLE DB].ExternalColumns[Phone]"
+                      dataType="wstr"
+                      length="255"
+                      name="Phone" />
+                    <externalMetadataColumn
+                      refId="Package\Tâche de flux de données\DimAgent.Inputs[Entrée de destination OLE DB].ExternalColumns[Phone1]"
+                      dataType="wstr"
+                      length="255"
+                      name="Phone1" />
+                    <externalMetadataColumn
+                      refId="Package\Tâche de flux de données\DimAgent.Inputs[Entrée de destination OLE DB].ExternalColumns[Phone2]"
+                      dataType="wstr"
+                      length="255"
+                      name="Phone2" />
+                    <externalMetadataColumn
+                      refId="Package\Tâche de flux de données\DimAgent.Inputs[Entrée de destination OLE DB].ExternalColumns[Birthday]"
+                      dataType="wstr"
+                      length="255"
+                      name="Birthday" />
+                    <externalMetadataColumn
+                      refId="Package\Tâche de flux de données\DimAgent.Inputs[Entrée de destination OLE DB].ExternalColumns[Picture]"
+                      dataType="wstr"
+                      length="255"
+                      name="Picture" />
+                    <externalMetadataColumn
+                      refId="Package\Tâche de flux de données\DimAgent.Inputs[Entrée de destination OLE DB].ExternalColumns[customerOid]"
+                      dataType="wstr"
+                      length="255"
+                      name="customerOid" />
+                    <externalMetadataColumn
+                      refId="Package\Tâche de flux de données\DimAgent.Inputs[Entrée de destination OLE DB].ExternalColumns[createat]"
+                      dataType="wstr"
+                      length="255"
+                      name="createat" />
+                    <externalMetadataColumn
+                      refId="Package\Tâche de flux de données\DimAgent.Inputs[Entrée de destination OLE DB].ExternalColumns[deleteat]"
+                      dataType="wstr"
+                      length="255"
+                      name="deleteat" />
+                  </externalMetadataColumns>
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Tâche de flux de données\DimAgent.Outputs[Sortie d'erreur de destination OLE DB]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="Sortie d'erreur de destination OLE DB"
+                  synchronousInputId="Package\Tâche de flux de données\DimAgent.Inputs[Entrée de destination OLE DB]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Tâche de flux de données\DimAgent.Outputs[Sortie d'erreur de destination OLE DB].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Tâche de flux de données\DimAgent.Outputs[Sortie d'erreur de destination OLE DB].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Tâche de flux de données\DimAgent.Outputs[Sortie d'erreur de destination OLE DB].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Tâche de flux de données\DimAgent.Outputs[Sortie d'erreur de destination OLE DB].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Tâche de flux de données\StageAgent"
+              componentClassID="Microsoft.OLEDBSource"
+              contactInfo="Source OLE DB;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; Tous droits réservés; http://www.microsoft.com/sql/support;7"
+              description="Source OLE DB"
+              name="StageAgent"
+              usesDispositions="true"
+              version="7">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="Nombre de secondes avant l'expiration d'une commande.  Une valeur égale à 0 indique un délai d'expiration infini."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="Spécifie le nom de l'objet de base de données utilisé pour ouvrir un ensemble de lignes."
+                  name="OpenRowset">[dbo].[ListAgents$]</property>
+                <property
+                  dataType="System.String"
+                  description="Spécifie la variable contenant le nom de l'objet de base de données utilisé pour ouvrir un ensemble de lignes."
+                  name="OpenRowsetVariable"></property>
+                <property
+                  dataType="System.String"
+                  description="Commande SQL à exécuter."
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                <property
+                  dataType="System.String"
+                  description="Variable contenant la commande SQL à exécuter."
+                  name="SqlCommandVariable"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Spécifie la page de codes de la colonne à utiliser lorsque les informations de page de codes ne sont pas disponibles à partir de la source de données."
+                  name="DefaultCodePage">1252</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Force l'utilisation de la valeur de propriété DefaultCodePage lors de la description des données caractères."
+                  name="AlwaysUseDefaultCodePage">false</property>
+                <property
+                  dataType="System.Int32"
+                  description="Spécifie le mode utilisé pour accéder à la base de données."
+                  name="AccessMode"
+                  typeConverter="AccessMode">0</property>
+                <property
+                  dataType="System.String"
+                  description="Mappages entre les paramètres de la commande SQL et les variables."
+                  name="ParameterMapping"></property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Tâche de flux de données\StageAgent.Connections[OleDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[DESKTOP-57MB2CN\INTELCIA.StagingArea.testconn 1]"
+                  connectionManagerRefId="Package.ConnectionManagers[DESKTOP-57MB2CN\INTELCIA.StagingArea.testconn 1]"
+                  description="Connexion OLE DB en cours d'exécution utilisée pour accéder à la base de données."
+                  name="OleDbConnection" />
+              </connections>
+              <outputs>
+                <output
+                  refId="Package\Tâche de flux de données\StageAgent.Outputs[Sortie de source OLE DB]"
+                  name="Sortie de source OLE DB">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Tâche de flux de données\StageAgent.Outputs[Sortie de source OLE DB].Columns[customerId]"
+                      dataType="r8"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Tâche de flux de données\StageAgent.Outputs[Sortie de source OLE DB].ExternalColumns[customerId]"
+                      lineageId="Package\Tâche de flux de données\StageAgent.Outputs[Sortie de source OLE DB].Columns[customerId]"
+                      name="customerId"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Tâche de flux de données\StageAgent.Outputs[Sortie de source OLE DB].Columns[customer]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Tâche de flux de données\StageAgent.Outputs[Sortie de source OLE DB].ExternalColumns[customer]"
+                      length="255"
+                      lineageId="Package\Tâche de flux de données\StageAgent.Outputs[Sortie de source OLE DB].Columns[customer]"
+                      name="customer"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Tâche de flux de données\StageAgent.Outputs[Sortie de source OLE DB].Columns[Oid]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Tâche de flux de données\StageAgent.Outputs[Sortie de source OLE DB].ExternalColumns[Oid]"
+                      length="255"
+                      lineageId="Package\Tâche de flux de données\StageAgent.Outputs[Sortie de source OLE DB].Columns[Oid]"
+                      name="Oid"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Tâche de flux de données\StageAgent.Outputs[Sortie de source OLE DB].Columns[Ident]"
+                      dataType="r8"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Tâche de flux de données\StageAgent.Outputs[Sortie de source OLE DB].ExternalColumns[Ident]"
+                      lineageId="Package\Tâche de flux de données\StageAgent.Outputs[Sortie de source OLE DB].Columns[Ident]"
+                      name="Ident"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Tâche de flux de données\StageAgent.Outputs[Sortie de source OLE DB].Columns[ReceptionGrp]"
+                      dataType="nText"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Tâche de flux de données\StageAgent.Outputs[Sortie de source OLE DB].ExternalColumns[ReceptionGrp]"
+                      lineageId="Package\Tâche de flux de données\StageAgent.Outputs[Sortie de source OLE DB].Columns[ReceptionGrp]"
+                      name="ReceptionGrp"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Tâche de flux de données\StageAgent.Outputs[Sortie de source OLE DB].Columns[EntreCom]"
+                      dataType="r8"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Tâche de flux de données\StageAgent.Outputs[Sortie de source OLE DB].ExternalColumns[EntreCom]"
+                      lineageId="Package\Tâche de flux de données\StageAgent.Outputs[Sortie de source OLE DB].Columns[EntreCom]"
+                      name="EntreCom"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Tâche de flux de données\StageAgent.Outputs[Sortie de source OLE DB].Columns[Options]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Tâche de flux de données\StageAgent.Outputs[Sortie de source OLE DB].ExternalColumns[Options]"
+                      length="255"
+                      lineageId="Package\Tâche de flux de données\StageAgent.Outputs[Sortie de source OLE DB].Columns[Options]"
+                      name="Options"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Tâche de flux de données\StageAgent.Outputs[Sortie de source OLE DB].Columns[LoginName]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Tâche de flux de données\StageAgent.Outputs[Sortie de source OLE DB].ExternalColumns[LoginName]"
+                      length="255"
+                      lineageId="Package\Tâche de flux de données\StageAgent.Outputs[Sortie de source OLE DB].Columns[LoginName]"
+                      name="LoginName"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Tâche de flux de données\StageAgent.Outputs[Sortie de source OLE DB].Columns[Profile]"
+                      dataType="r8"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Tâche de flux de données\StageAgent.Outputs[Sortie de source OLE DB].ExternalColumns[Profile]"
+                      lineageId="Package\Tâche de flux de données\StageAgent.Outputs[Sortie de source OLE DB].Columns[Profile]"
+                      name="Profile"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Tâche de flux de données\StageAgent.Outputs[Sortie de source OLE DB].Columns[Rights]"
+                      dataType="r8"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Tâche de flux de données\StageAgent.Outputs[Sortie de source OLE DB].ExternalColumns[Rights]"
+                      lineageId="Package\Tâche de flux de données\StageAgent.Outputs[Sortie de source OLE DB].Columns[Rights]"
+                      name="Rights"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Tâche de flux de données\StageAgent.Outputs[Sortie de source OLE DB].Columns[Password]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Tâche de flux de données\StageAgent.Outputs[Sortie de source OLE DB].ExternalColumns[Password]"
+                      length="255"
+                      lineageId="Package\Tâche de flux de données\StageAgent.Outputs[Sortie de source OLE DB].Columns[Password]"
+                      name="Password"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Tâche de flux de données\StageAgent.Outputs[Sortie de source OLE DB].Columns[GroupMember]"
+                      dataType="r8"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Tâche de flux de données\StageAgent.Outputs[Sortie de source OLE DB].ExternalColumns[GroupMember]"
+                      lineageId="Package\Tâche de flux de données\StageAgent.Outputs[Sortie de source OLE DB].Columns[GroupMember]"
+                      name="GroupMember"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Tâche de flux de données\StageAgent.Outputs[Sortie de source OLE DB].Columns[ScriptFramesetUrl]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Tâche de flux de données\StageAgent.Outputs[Sortie de source OLE DB].ExternalColumns[ScriptFramesetUrl]"
+                      length="255"
+                      lineageId="Package\Tâche de flux de données\StageAgent.Outputs[Sortie de source OLE DB].Columns[ScriptFramesetUrl]"
+                      name="ScriptFramesetUrl"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Tâche de flux de données\StageAgent.Outputs[Sortie de source OLE DB].Columns[ScriptFramesetName]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Tâche de flux de données\StageAgent.Outputs[Sortie de source OLE DB].ExternalColumns[ScriptFramesetName]"
+                      length="255"
+                      lineageId="Package\Tâche de flux de données\StageAgent.Outputs[Sortie de source OLE DB].Columns[ScriptFramesetName]"
+                      name="ScriptFramesetName"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Tâche de flux de données\StageAgent.Outputs[Sortie de source OLE DB].Columns[MaxChatSessions]"
+                      dataType="r8"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Tâche de flux de données\StageAgent.Outputs[Sortie de source OLE DB].ExternalColumns[MaxChatSessions]"
+                      lineageId="Package\Tâche de flux de données\StageAgent.Outputs[Sortie de source OLE DB].Columns[MaxChatSessions]"
+                      name="MaxChatSessions"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Tâche de flux de données\StageAgent.Outputs[Sortie de source OLE DB].Columns[MaxEmailSessions]"
+                      dataType="r8"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Tâche de flux de données\StageAgent.Outputs[Sortie de source OLE DB].ExternalColumns[MaxEmailSessions]"
+                      lineageId="Package\Tâche de flux de données\StageAgent.Outputs[Sortie de source OLE DB].Columns[MaxEmailSessions]"
+                      name="MaxEmailSessions"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Tâche de flux de données\StageAgent.Outputs[Sortie de source OLE DB].Columns[AlwaysOnTop]"
+                      dataType="r8"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Tâche de flux de données\StageAgent.Outputs[Sortie de source OLE DB].ExternalColumns[AlwaysOnTop]"
+                      lineageId="Package\Tâche de flux de données\StageAgent.Outputs[Sortie de source OLE DB].Columns[AlwaysOnTop]"
+                      name="AlwaysOnTop"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Tâche de flux de données\StageAgent.Outputs[Sortie de source OLE DB].Columns[FullScreen]"
+                      dataType="r8"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Tâche de flux de données\StageAgent.Outputs[Sortie de source OLE DB].ExternalColumns[FullScreen]"
+                      lineageId="Package\Tâche de flux de données\StageAgent.Outputs[Sortie de source OLE DB].Columns[FullScreen]"
+                      name="FullScreen"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Tâche de flux de données\StageAgent.Outputs[Sortie de source OLE DB].Columns[WorkspaceWidth]"
+                      dataType="r8"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Tâche de flux de données\StageAgent.Outputs[Sortie de source OLE DB].ExternalColumns[WorkspaceWidth]"
+                      lineageId="Package\Tâche de flux de données\StageAgent.Outputs[Sortie de source OLE DB].Columns[WorkspaceWidth]"
+                      name="WorkspaceWidth"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Tâche de flux de données\StageAgent.Outputs[Sortie de source OLE DB].Columns[WorkspaceHeight]"
+                      dataType="r8"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Tâche de flux de données\StageAgent.Outputs[Sortie de source OLE DB].ExternalColumns[WorkspaceHeight]"
+                      lineageId="Package\Tâche de flux de données\StageAgent.Outputs[Sortie de source OLE DB].Columns[WorkspaceHeight]"
+                      name="WorkspaceHeight"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Tâche de flux de données\StageAgent.Outputs[Sortie de source OLE DB].Columns[ReadyAtLogin]"
+                      dataType="r8"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Tâche de flux de données\StageAgent.Outputs[Sortie de source OLE DB].ExternalColumns[ReadyAtLogin]"
+                      lineageId="Package\Tâche de flux de données\StageAgent.Outputs[Sortie de source OLE DB].Columns[ReadyAtLogin]"
+                      name="ReadyAtLogin"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Tâche de flux de données\StageAgent.Outputs[Sortie de source OLE DB].Columns[WorkspaceOid]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Tâche de flux de données\StageAgent.Outputs[Sortie de source OLE DB].ExternalColumns[WorkspaceOid]"
+                      length="255"
+                      lineageId="Package\Tâche de flux de données\StageAgent.Outputs[Sortie de source OLE DB].Columns[WorkspaceOid]"
+                      name="WorkspaceOid"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Tâche de flux de données\StageAgent.Outputs[Sortie de source OLE DB].Columns[CTISkills]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Tâche de flux de données\StageAgent.Outputs[Sortie de source OLE DB].ExternalColumns[CTISkills]"
+                      length="255"
+                      lineageId="Package\Tâche de flux de données\StageAgent.Outputs[Sortie de source OLE DB].Columns[CTISkills]"
+                      name="CTISkills"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Tâche de flux de données\StageAgent.Outputs[Sortie de source OLE DB].Columns[OutCampaigns]"
+                      dataType="nText"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Tâche de flux de données\StageAgent.Outputs[Sortie de source OLE DB].ExternalColumns[OutCampaigns]"
+                      lineageId="Package\Tâche de flux de données\StageAgent.Outputs[Sortie de source OLE DB].Columns[OutCampaigns]"
+                      name="OutCampaigns"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Tâche de flux de données\StageAgent.Outputs[Sortie de source OLE DB].Columns[CoachRightLevel]"
+                      dataType="r8"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Tâche de flux de données\StageAgent.Outputs[Sortie de source OLE DB].ExternalColumns[CoachRightLevel]"
+                      lineageId="Package\Tâche de flux de données\StageAgent.Outputs[Sortie de source OLE DB].Columns[CoachRightLevel]"
+                      name="CoachRightLevel"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Tâche de flux de données\StageAgent.Outputs[Sortie de source OLE DB].Columns[CurrentOutQueue]"
+                      dataType="r8"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Tâche de flux de données\StageAgent.Outputs[Sortie de source OLE DB].ExternalColumns[CurrentOutQueue]"
+                      lineageId="Package\Tâche de flux de données\StageAgent.Outputs[Sortie de source OLE DB].Columns[CurrentOutQueue]"
+                      name="CurrentOutQueue"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Tâche de flux de données\StageAgent.Outputs[Sortie de source OLE DB].Columns[WorkspaceAffectationExt]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Tâche de flux de données\StageAgent.Outputs[Sortie de source OLE DB].ExternalColumns[WorkspaceAffectationExt]"
+                      length="255"
+                      lineageId="Package\Tâche de flux de données\StageAgent.Outputs[Sortie de source OLE DB].Columns[WorkspaceAffectationExt]"
+                      name="WorkspaceAffectationExt"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Tâche de flux de données\StageAgent.Outputs[Sortie de source OLE DB].Columns[DefaultOutCampaign]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Tâche de flux de données\StageAgent.Outputs[Sortie de source OLE DB].ExternalColumns[DefaultOutCampaign]"
+                      length="255"
+                      lineageId="Package\Tâche de flux de données\StageAgent.Outputs[Sortie de source OLE DB].Columns[DefaultOutCampaign]"
+                      name="DefaultOutCampaign"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Tâche de flux de données\StageAgent.Outputs[Sortie de source OLE DB].Columns[IsReAssigned]"
+                      dataType="r8"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Tâche de flux de données\StageAgent.Outputs[Sortie de source OLE DB].ExternalColumns[IsReAssigned]"
+                      lineageId="Package\Tâche de flux de données\StageAgent.Outputs[Sortie de source OLE DB].Columns[IsReAssigned]"
+                      name="IsReAssigned"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Tâche de flux de données\StageAgent.Outputs[Sortie de source OLE DB].Columns[AgentLightRight]"
+                      dataType="r8"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Tâche de flux de données\StageAgent.Outputs[Sortie de source OLE DB].ExternalColumns[AgentLightRight]"
+                      lineageId="Package\Tâche de flux de données\StageAgent.Outputs[Sortie de source OLE DB].Columns[AgentLightRight]"
+                      name="AgentLightRight"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Tâche de flux de données\StageAgent.Outputs[Sortie de source OLE DB].Columns[AgentLightPlanningOid]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Tâche de flux de données\StageAgent.Outputs[Sortie de source OLE DB].ExternalColumns[AgentLightPlanningOid]"
+                      length="255"
+                      lineageId="Package\Tâche de flux de données\StageAgent.Outputs[Sortie de source OLE DB].Columns[AgentLightPlanningOid]"
+                      name="AgentLightPlanningOid"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Tâche de flux de données\StageAgent.Outputs[Sortie de source OLE DB].Columns[AgentLightExtensionId]"
+                      dataType="r8"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Tâche de flux de données\StageAgent.Outputs[Sortie de source OLE DB].ExternalColumns[AgentLightExtensionId]"
+                      lineageId="Package\Tâche de flux de données\StageAgent.Outputs[Sortie de source OLE DB].Columns[AgentLightExtensionId]"
+                      name="AgentLightExtensionId"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Tâche de flux de données\StageAgent.Outputs[Sortie de source OLE DB].Columns[RingMaxDialingDuration]"
+                      dataType="r8"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Tâche de flux de données\StageAgent.Outputs[Sortie de source OLE DB].ExternalColumns[RingMaxDialingDuration]"
+                      lineageId="Package\Tâche de flux de données\StageAgent.Outputs[Sortie de source OLE DB].Columns[RingMaxDialingDuration]"
+                      name="RingMaxDialingDuration"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Tâche de flux de données\StageAgent.Outputs[Sortie de source OLE DB].Columns[RingMaxDialingAttempts]"
+                      dataType="r8"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Tâche de flux de données\StageAgent.Outputs[Sortie de source OLE DB].ExternalColumns[RingMaxDialingAttempts]"
+                      lineageId="Package\Tâche de flux de données\StageAgent.Outputs[Sortie de source OLE DB].Columns[RingMaxDialingAttempts]"
+                      name="RingMaxDialingAttempts"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Tâche de flux de données\StageAgent.Outputs[Sortie de source OLE DB].Columns[MaxSmsSessions]"
+                      dataType="r8"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Tâche de flux de données\StageAgent.Outputs[Sortie de source OLE DB].ExternalColumns[MaxSmsSessions]"
+                      lineageId="Package\Tâche de flux de données\StageAgent.Outputs[Sortie de source OLE DB].Columns[MaxSmsSessions]"
+                      name="MaxSmsSessions"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Tâche de flux de données\StageAgent.Outputs[Sortie de source OLE DB].Columns[PasswordDate]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Tâche de flux de données\StageAgent.Outputs[Sortie de source OLE DB].ExternalColumns[PasswordDate]"
+                      length="255"
+                      lineageId="Package\Tâche de flux de données\StageAgent.Outputs[Sortie de source OLE DB].Columns[PasswordDate]"
+                      name="PasswordDate"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Tâche de flux de données\StageAgent.Outputs[Sortie de source OLE DB].Columns[ProfileDetailed]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Tâche de flux de données\StageAgent.Outputs[Sortie de source OLE DB].ExternalColumns[ProfileDetailed]"
+                      length="255"
+                      lineageId="Package\Tâche de flux de données\StageAgent.Outputs[Sortie de source OLE DB].Columns[ProfileDetailed]"
+                      name="ProfileDetailed"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Tâche de flux de données\StageAgent.Outputs[Sortie de source OLE DB].Columns[ProfileDetailedWithDesc]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Tâche de flux de données\StageAgent.Outputs[Sortie de source OLE DB].ExternalColumns[ProfileDetailedWithDesc]"
+                      length="255"
+                      lineageId="Package\Tâche de flux de données\StageAgent.Outputs[Sortie de source OLE DB].Columns[ProfileDetailedWithDesc]"
+                      name="ProfileDetailedWithDesc"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Tâche de flux de données\StageAgent.Outputs[Sortie de source OLE DB].Columns[MaxSocialNetworkSessions]"
+                      dataType="r8"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Tâche de flux de données\StageAgent.Outputs[Sortie de source OLE DB].ExternalColumns[MaxSocialNetworkSessions]"
+                      lineageId="Package\Tâche de flux de données\StageAgent.Outputs[Sortie de source OLE DB].Columns[MaxSocialNetworkSessions]"
+                      name="MaxSocialNetworkSessions"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Tâche de flux de données\StageAgent.Outputs[Sortie de source OLE DB].Columns[Gender]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Tâche de flux de données\StageAgent.Outputs[Sortie de source OLE DB].ExternalColumns[Gender]"
+                      length="255"
+                      lineageId="Package\Tâche de flux de données\StageAgent.Outputs[Sortie de source OLE DB].Columns[Gender]"
+                      name="Gender"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Tâche de flux de données\StageAgent.Outputs[Sortie de source OLE DB].Columns[FirstName]"
+                      dataType="r8"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Tâche de flux de données\StageAgent.Outputs[Sortie de source OLE DB].ExternalColumns[FirstName]"
+                      lineageId="Package\Tâche de flux de données\StageAgent.Outputs[Sortie de source OLE DB].Columns[FirstName]"
+                      name="FirstName"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Tâche de flux de données\StageAgent.Outputs[Sortie de source OLE DB].Columns[LastName]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Tâche de flux de données\StageAgent.Outputs[Sortie de source OLE DB].ExternalColumns[LastName]"
+                      length="255"
+                      lineageId="Package\Tâche de flux de données\StageAgent.Outputs[Sortie de source OLE DB].Columns[LastName]"
+                      name="LastName"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Tâche de flux de données\StageAgent.Outputs[Sortie de source OLE DB].Columns[Address]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Tâche de flux de données\StageAgent.Outputs[Sortie de source OLE DB].ExternalColumns[Address]"
+                      length="255"
+                      lineageId="Package\Tâche de flux de données\StageAgent.Outputs[Sortie de source OLE DB].Columns[Address]"
+                      name="Address"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Tâche de flux de données\StageAgent.Outputs[Sortie de source OLE DB].Columns[CP]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Tâche de flux de données\StageAgent.Outputs[Sortie de source OLE DB].ExternalColumns[CP]"
+                      length="255"
+                      lineageId="Package\Tâche de flux de données\StageAgent.Outputs[Sortie de source OLE DB].Columns[CP]"
+                      name="CP"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Tâche de flux de données\StageAgent.Outputs[Sortie de source OLE DB].Columns[City]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Tâche de flux de données\StageAgent.Outputs[Sortie de source OLE DB].ExternalColumns[City]"
+                      length="255"
+                      lineageId="Package\Tâche de flux de données\StageAgent.Outputs[Sortie de source OLE DB].Columns[City]"
+                      name="City"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Tâche de flux de données\StageAgent.Outputs[Sortie de source OLE DB].Columns[Email]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Tâche de flux de données\StageAgent.Outputs[Sortie de source OLE DB].ExternalColumns[Email]"
+                      length="255"
+                      lineageId="Package\Tâche de flux de données\StageAgent.Outputs[Sortie de source OLE DB].Columns[Email]"
+                      name="Email"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Tâche de flux de données\StageAgent.Outputs[Sortie de source OLE DB].Columns[Phone]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Tâche de flux de données\StageAgent.Outputs[Sortie de source OLE DB].ExternalColumns[Phone]"
+                      length="255"
+                      lineageId="Package\Tâche de flux de données\StageAgent.Outputs[Sortie de source OLE DB].Columns[Phone]"
+                      name="Phone"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Tâche de flux de données\StageAgent.Outputs[Sortie de source OLE DB].Columns[Phone1]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Tâche de flux de données\StageAgent.Outputs[Sortie de source OLE DB].ExternalColumns[Phone1]"
+                      length="255"
+                      lineageId="Package\Tâche de flux de données\StageAgent.Outputs[Sortie de source OLE DB].Columns[Phone1]"
+                      name="Phone1"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Tâche de flux de données\StageAgent.Outputs[Sortie de source OLE DB].Columns[Phone2]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Tâche de flux de données\StageAgent.Outputs[Sortie de source OLE DB].ExternalColumns[Phone2]"
+                      length="255"
+                      lineageId="Package\Tâche de flux de données\StageAgent.Outputs[Sortie de source OLE DB].Columns[Phone2]"
+                      name="Phone2"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Tâche de flux de données\StageAgent.Outputs[Sortie de source OLE DB].Columns[Birthday]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Tâche de flux de données\StageAgent.Outputs[Sortie de source OLE DB].ExternalColumns[Birthday]"
+                      length="255"
+                      lineageId="Package\Tâche de flux de données\StageAgent.Outputs[Sortie de source OLE DB].Columns[Birthday]"
+                      name="Birthday"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Tâche de flux de données\StageAgent.Outputs[Sortie de source OLE DB].Columns[Picture]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Tâche de flux de données\StageAgent.Outputs[Sortie de source OLE DB].ExternalColumns[Picture]"
+                      length="255"
+                      lineageId="Package\Tâche de flux de données\StageAgent.Outputs[Sortie de source OLE DB].Columns[Picture]"
+                      name="Picture"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Tâche de flux de données\StageAgent.Outputs[Sortie de source OLE DB].Columns[customerOid]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Tâche de flux de données\StageAgent.Outputs[Sortie de source OLE DB].ExternalColumns[customerOid]"
+                      length="255"
+                      lineageId="Package\Tâche de flux de données\StageAgent.Outputs[Sortie de source OLE DB].Columns[customerOid]"
+                      name="customerOid"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Tâche de flux de données\StageAgent.Outputs[Sortie de source OLE DB].Columns[createat]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Tâche de flux de données\StageAgent.Outputs[Sortie de source OLE DB].ExternalColumns[createat]"
+                      length="255"
+                      lineageId="Package\Tâche de flux de données\StageAgent.Outputs[Sortie de source OLE DB].Columns[createat]"
+                      name="createat"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Tâche de flux de données\StageAgent.Outputs[Sortie de source OLE DB].Columns[deleteat]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Tâche de flux de données\StageAgent.Outputs[Sortie de source OLE DB].ExternalColumns[deleteat]"
+                      length="255"
+                      lineageId="Package\Tâche de flux de données\StageAgent.Outputs[Sortie de source OLE DB].Columns[deleteat]"
+                      name="deleteat"
+                      truncationRowDisposition="FailComponent" />
+                  </outputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Tâche de flux de données\StageAgent.Outputs[Sortie de source OLE DB].ExternalColumns[customerId]"
+                      dataType="r8"
+                      name="customerId" />
+                    <externalMetadataColumn
+                      refId="Package\Tâche de flux de données\StageAgent.Outputs[Sortie de source OLE DB].ExternalColumns[customer]"
+                      dataType="wstr"
+                      length="255"
+                      name="customer" />
+                    <externalMetadataColumn
+                      refId="Package\Tâche de flux de données\StageAgent.Outputs[Sortie de source OLE DB].ExternalColumns[Oid]"
+                      dataType="wstr"
+                      length="255"
+                      name="Oid" />
+                    <externalMetadataColumn
+                      refId="Package\Tâche de flux de données\StageAgent.Outputs[Sortie de source OLE DB].ExternalColumns[Ident]"
+                      dataType="r8"
+                      name="Ident" />
+                    <externalMetadataColumn
+                      refId="Package\Tâche de flux de données\StageAgent.Outputs[Sortie de source OLE DB].ExternalColumns[ReceptionGrp]"
+                      dataType="nText"
+                      name="ReceptionGrp" />
+                    <externalMetadataColumn
+                      refId="Package\Tâche de flux de données\StageAgent.Outputs[Sortie de source OLE DB].ExternalColumns[EntreCom]"
+                      dataType="r8"
+                      name="EntreCom" />
+                    <externalMetadataColumn
+                      refId="Package\Tâche de flux de données\StageAgent.Outputs[Sortie de source OLE DB].ExternalColumns[Options]"
+                      dataType="wstr"
+                      length="255"
+                      name="Options" />
+                    <externalMetadataColumn
+                      refId="Package\Tâche de flux de données\StageAgent.Outputs[Sortie de source OLE DB].ExternalColumns[LoginName]"
+                      dataType="wstr"
+                      length="255"
+                      name="LoginName" />
+                    <externalMetadataColumn
+                      refId="Package\Tâche de flux de données\StageAgent.Outputs[Sortie de source OLE DB].ExternalColumns[Profile]"
+                      dataType="r8"
+                      name="Profile" />
+                    <externalMetadataColumn
+                      refId="Package\Tâche de flux de données\StageAgent.Outputs[Sortie de source OLE DB].ExternalColumns[Rights]"
+                      dataType="r8"
+                      name="Rights" />
+                    <externalMetadataColumn
+                      refId="Package\Tâche de flux de données\StageAgent.Outputs[Sortie de source OLE DB].ExternalColumns[Password]"
+                      dataType="wstr"
+                      length="255"
+                      name="Password" />
+                    <externalMetadataColumn
+                      refId="Package\Tâche de flux de données\StageAgent.Outputs[Sortie de source OLE DB].ExternalColumns[GroupMember]"
+                      dataType="r8"
+                      name="GroupMember" />
+                    <externalMetadataColumn
+                      refId="Package\Tâche de flux de données\StageAgent.Outputs[Sortie de source OLE DB].ExternalColumns[ScriptFramesetUrl]"
+                      dataType="wstr"
+                      length="255"
+                      name="ScriptFramesetUrl" />
+                    <externalMetadataColumn
+                      refId="Package\Tâche de flux de données\StageAgent.Outputs[Sortie de source OLE DB].ExternalColumns[ScriptFramesetName]"
+                      dataType="wstr"
+                      length="255"
+                      name="ScriptFramesetName" />
+                    <externalMetadataColumn
+                      refId="Package\Tâche de flux de données\StageAgent.Outputs[Sortie de source OLE DB].ExternalColumns[MaxChatSessions]"
+                      dataType="r8"
+                      name="MaxChatSessions" />
+                    <externalMetadataColumn
+                      refId="Package\Tâche de flux de données\StageAgent.Outputs[Sortie de source OLE DB].ExternalColumns[MaxEmailSessions]"
+                      dataType="r8"
+                      name="MaxEmailSessions" />
+                    <externalMetadataColumn
+                      refId="Package\Tâche de flux de données\StageAgent.Outputs[Sortie de source OLE DB].ExternalColumns[AlwaysOnTop]"
+                      dataType="r8"
+                      name="AlwaysOnTop" />
+                    <externalMetadataColumn
+                      refId="Package\Tâche de flux de données\StageAgent.Outputs[Sortie de source OLE DB].ExternalColumns[FullScreen]"
+                      dataType="r8"
+                      name="FullScreen" />
+                    <externalMetadataColumn
+                      refId="Package\Tâche de flux de données\StageAgent.Outputs[Sortie de source OLE DB].ExternalColumns[WorkspaceWidth]"
+                      dataType="r8"
+                      name="WorkspaceWidth" />
+                    <externalMetadataColumn
+                      refId="Package\Tâche de flux de données\StageAgent.Outputs[Sortie de source OLE DB].ExternalColumns[WorkspaceHeight]"
+                      dataType="r8"
+                      name="WorkspaceHeight" />
+                    <externalMetadataColumn
+                      refId="Package\Tâche de flux de données\StageAgent.Outputs[Sortie de source OLE DB].ExternalColumns[ReadyAtLogin]"
+                      dataType="r8"
+                      name="ReadyAtLogin" />
+                    <externalMetadataColumn
+                      refId="Package\Tâche de flux de données\StageAgent.Outputs[Sortie de source OLE DB].ExternalColumns[WorkspaceOid]"
+                      dataType="wstr"
+                      length="255"
+                      name="WorkspaceOid" />
+                    <externalMetadataColumn
+                      refId="Package\Tâche de flux de données\StageAgent.Outputs[Sortie de source OLE DB].ExternalColumns[CTISkills]"
+                      dataType="wstr"
+                      length="255"
+                      name="CTISkills" />
+                    <externalMetadataColumn
+                      refId="Package\Tâche de flux de données\StageAgent.Outputs[Sortie de source OLE DB].ExternalColumns[OutCampaigns]"
+                      dataType="nText"
+                      name="OutCampaigns" />
+                    <externalMetadataColumn
+                      refId="Package\Tâche de flux de données\StageAgent.Outputs[Sortie de source OLE DB].ExternalColumns[CoachRightLevel]"
+                      dataType="r8"
+                      name="CoachRightLevel" />
+                    <externalMetadataColumn
+                      refId="Package\Tâche de flux de données\StageAgent.Outputs[Sortie de source OLE DB].ExternalColumns[CurrentOutQueue]"
+                      dataType="r8"
+                      name="CurrentOutQueue" />
+                    <externalMetadataColumn
+                      refId="Package\Tâche de flux de données\StageAgent.Outputs[Sortie de source OLE DB].ExternalColumns[WorkspaceAffectationExt]"
+                      dataType="wstr"
+                      length="255"
+                      name="WorkspaceAffectationExt" />
+                    <externalMetadataColumn
+                      refId="Package\Tâche de flux de données\StageAgent.Outputs[Sortie de source OLE DB].ExternalColumns[DefaultOutCampaign]"
+                      dataType="wstr"
+                      length="255"
+                      name="DefaultOutCampaign" />
+                    <externalMetadataColumn
+                      refId="Package\Tâche de flux de données\StageAgent.Outputs[Sortie de source OLE DB].ExternalColumns[IsReAssigned]"
+                      dataType="r8"
+                      name="IsReAssigned" />
+                    <externalMetadataColumn
+                      refId="Package\Tâche de flux de données\StageAgent.Outputs[Sortie de source OLE DB].ExternalColumns[AgentLightRight]"
+                      dataType="r8"
+                      name="AgentLightRight" />
+                    <externalMetadataColumn
+                      refId="Package\Tâche de flux de données\StageAgent.Outputs[Sortie de source OLE DB].ExternalColumns[AgentLightPlanningOid]"
+                      dataType="wstr"
+                      length="255"
+                      name="AgentLightPlanningOid" />
+                    <externalMetadataColumn
+                      refId="Package\Tâche de flux de données\StageAgent.Outputs[Sortie de source OLE DB].ExternalColumns[AgentLightExtensionId]"
+                      dataType="r8"
+                      name="AgentLightExtensionId" />
+                    <externalMetadataColumn
+                      refId="Package\Tâche de flux de données\StageAgent.Outputs[Sortie de source OLE DB].ExternalColumns[RingMaxDialingDuration]"
+                      dataType="r8"
+                      name="RingMaxDialingDuration" />
+                    <externalMetadataColumn
+                      refId="Package\Tâche de flux de données\StageAgent.Outputs[Sortie de source OLE DB].ExternalColumns[RingMaxDialingAttempts]"
+                      dataType="r8"
+                      name="RingMaxDialingAttempts" />
+                    <externalMetadataColumn
+                      refId="Package\Tâche de flux de données\StageAgent.Outputs[Sortie de source OLE DB].ExternalColumns[MaxSmsSessions]"
+                      dataType="r8"
+                      name="MaxSmsSessions" />
+                    <externalMetadataColumn
+                      refId="Package\Tâche de flux de données\StageAgent.Outputs[Sortie de source OLE DB].ExternalColumns[PasswordDate]"
+                      dataType="wstr"
+                      length="255"
+                      name="PasswordDate" />
+                    <externalMetadataColumn
+                      refId="Package\Tâche de flux de données\StageAgent.Outputs[Sortie de source OLE DB].ExternalColumns[ProfileDetailed]"
+                      dataType="wstr"
+                      length="255"
+                      name="ProfileDetailed" />
+                    <externalMetadataColumn
+                      refId="Package\Tâche de flux de données\StageAgent.Outputs[Sortie de source OLE DB].ExternalColumns[ProfileDetailedWithDesc]"
+                      dataType="wstr"
+                      length="255"
+                      name="ProfileDetailedWithDesc" />
+                    <externalMetadataColumn
+                      refId="Package\Tâche de flux de données\StageAgent.Outputs[Sortie de source OLE DB].ExternalColumns[MaxSocialNetworkSessions]"
+                      dataType="r8"
+                      name="MaxSocialNetworkSessions" />
+                    <externalMetadataColumn
+                      refId="Package\Tâche de flux de données\StageAgent.Outputs[Sortie de source OLE DB].ExternalColumns[Gender]"
+                      dataType="wstr"
+                      length="255"
+                      name="Gender" />
+                    <externalMetadataColumn
+                      refId="Package\Tâche de flux de données\StageAgent.Outputs[Sortie de source OLE DB].ExternalColumns[FirstName]"
+                      dataType="r8"
+                      name="FirstName" />
+                    <externalMetadataColumn
+                      refId="Package\Tâche de flux de données\StageAgent.Outputs[Sortie de source OLE DB].ExternalColumns[LastName]"
+                      dataType="wstr"
+                      length="255"
+                      name="LastName" />
+                    <externalMetadataColumn
+                      refId="Package\Tâche de flux de données\StageAgent.Outputs[Sortie de source OLE DB].ExternalColumns[Address]"
+                      dataType="wstr"
+                      length="255"
+                      name="Address" />
+                    <externalMetadataColumn
+                      refId="Package\Tâche de flux de données\StageAgent.Outputs[Sortie de source OLE DB].ExternalColumns[CP]"
+                      dataType="wstr"
+                      length="255"
+                      name="CP" />
+                    <externalMetadataColumn
+                      refId="Package\Tâche de flux de données\StageAgent.Outputs[Sortie de source OLE DB].ExternalColumns[City]"
+                      dataType="wstr"
+                      length="255"
+                      name="City" />
+                    <externalMetadataColumn
+                      refId="Package\Tâche de flux de données\StageAgent.Outputs[Sortie de source OLE DB].ExternalColumns[Email]"
+                      dataType="wstr"
+                      length="255"
+                      name="Email" />
+                    <externalMetadataColumn
+                      refId="Package\Tâche de flux de données\StageAgent.Outputs[Sortie de source OLE DB].ExternalColumns[Phone]"
+                      dataType="wstr"
+                      length="255"
+                      name="Phone" />
+                    <externalMetadataColumn
+                      refId="Package\Tâche de flux de données\StageAgent.Outputs[Sortie de source OLE DB].ExternalColumns[Phone1]"
+                      dataType="wstr"
+                      length="255"
+                      name="Phone1" />
+                    <externalMetadataColumn
+                      refId="Package\Tâche de flux de données\StageAgent.Outputs[Sortie de source OLE DB].ExternalColumns[Phone2]"
+                      dataType="wstr"
+                      length="255"
+                      name="Phone2" />
+                    <externalMetadataColumn
+                      refId="Package\Tâche de flux de données\StageAgent.Outputs[Sortie de source OLE DB].ExternalColumns[Birthday]"
+                      dataType="wstr"
+                      length="255"
+                      name="Birthday" />
+                    <externalMetadataColumn
+                      refId="Package\Tâche de flux de données\StageAgent.Outputs[Sortie de source OLE DB].ExternalColumns[Picture]"
+                      dataType="wstr"
+                      length="255"
+                      name="Picture" />
+                    <externalMetadataColumn
+                      refId="Package\Tâche de flux de données\StageAgent.Outputs[Sortie de source OLE DB].ExternalColumns[customerOid]"
+                      dataType="wstr"
+                      length="255"
+                      name="customerOid" />
+                    <externalMetadataColumn
+                      refId="Package\Tâche de flux de données\StageAgent.Outputs[Sortie de source OLE DB].ExternalColumns[createat]"
+                      dataType="wstr"
+                      length="255"
+                      name="createat" />
+                    <externalMetadataColumn
+                      refId="Package\Tâche de flux de données\StageAgent.Outputs[Sortie de source OLE DB].ExternalColumns[deleteat]"
+                      dataType="wstr"
+                      length="255"
+                      name="deleteat" />
+                  </externalMetadataColumns>
+                </output>
+                <output
+                  refId="Package\Tâche de flux de données\StageAgent.Outputs[Sortie d'erreur de source OLE DB]"
+                  isErrorOut="true"
+                  name="Sortie d'erreur de source OLE DB">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Tâche de flux de données\StageAgent.Outputs[Sortie d'erreur de source OLE DB].Columns[customerId]"
+                      dataType="r8"
+                      lineageId="Package\Tâche de flux de données\StageAgent.Outputs[Sortie d'erreur de source OLE DB].Columns[customerId]"
+                      name="customerId" />
+                    <outputColumn
+                      refId="Package\Tâche de flux de données\StageAgent.Outputs[Sortie d'erreur de source OLE DB].Columns[customer]"
+                      dataType="wstr"
+                      length="255"
+                      lineageId="Package\Tâche de flux de données\StageAgent.Outputs[Sortie d'erreur de source OLE DB].Columns[customer]"
+                      name="customer" />
+                    <outputColumn
+                      refId="Package\Tâche de flux de données\StageAgent.Outputs[Sortie d'erreur de source OLE DB].Columns[Oid]"
+                      dataType="wstr"
+                      length="255"
+                      lineageId="Package\Tâche de flux de données\StageAgent.Outputs[Sortie d'erreur de source OLE DB].Columns[Oid]"
+                      name="Oid" />
+                    <outputColumn
+                      refId="Package\Tâche de flux de données\StageAgent.Outputs[Sortie d'erreur de source OLE DB].Columns[Ident]"
+                      dataType="r8"
+                      lineageId="Package\Tâche de flux de données\StageAgent.Outputs[Sortie d'erreur de source OLE DB].Columns[Ident]"
+                      name="Ident" />
+                    <outputColumn
+                      refId="Package\Tâche de flux de données\StageAgent.Outputs[Sortie d'erreur de source OLE DB].Columns[ReceptionGrp]"
+                      dataType="nText"
+                      lineageId="Package\Tâche de flux de données\StageAgent.Outputs[Sortie d'erreur de source OLE DB].Columns[ReceptionGrp]"
+                      name="ReceptionGrp" />
+                    <outputColumn
+                      refId="Package\Tâche de flux de données\StageAgent.Outputs[Sortie d'erreur de source OLE DB].Columns[EntreCom]"
+                      dataType="r8"
+                      lineageId="Package\Tâche de flux de données\StageAgent.Outputs[Sortie d'erreur de source OLE DB].Columns[EntreCom]"
+                      name="EntreCom" />
+                    <outputColumn
+                      refId="Package\Tâche de flux de données\StageAgent.Outputs[Sortie d'erreur de source OLE DB].Columns[Options]"
+                      dataType="wstr"
+                      length="255"
+                      lineageId="Package\Tâche de flux de données\StageAgent.Outputs[Sortie d'erreur de source OLE DB].Columns[Options]"
+                      name="Options" />
+                    <outputColumn
+                      refId="Package\Tâche de flux de données\StageAgent.Outputs[Sortie d'erreur de source OLE DB].Columns[LoginName]"
+                      dataType="wstr"
+                      length="255"
+                      lineageId="Package\Tâche de flux de données\StageAgent.Outputs[Sortie d'erreur de source OLE DB].Columns[LoginName]"
+                      name="LoginName" />
+                    <outputColumn
+                      refId="Package\Tâche de flux de données\StageAgent.Outputs[Sortie d'erreur de source OLE DB].Columns[Profile]"
+                      dataType="r8"
+                      lineageId="Package\Tâche de flux de données\StageAgent.Outputs[Sortie d'erreur de source OLE DB].Columns[Profile]"
+                      name="Profile" />
+                    <outputColumn
+                      refId="Package\Tâche de flux de données\StageAgent.Outputs[Sortie d'erreur de source OLE DB].Columns[Rights]"
+                      dataType="r8"
+                      lineageId="Package\Tâche de flux de données\StageAgent.Outputs[Sortie d'erreur de source OLE DB].Columns[Rights]"
+                      name="Rights" />
+                    <outputColumn
+                      refId="Package\Tâche de flux de données\StageAgent.Outputs[Sortie d'erreur de source OLE DB].Columns[Password]"
+                      dataType="wstr"
+                      length="255"
+                      lineageId="Package\Tâche de flux de données\StageAgent.Outputs[Sortie d'erreur de source OLE DB].Columns[Password]"
+                      name="Password" />
+                    <outputColumn
+                      refId="Package\Tâche de flux de données\StageAgent.Outputs[Sortie d'erreur de source OLE DB].Columns[GroupMember]"
+                      dataType="r8"
+                      lineageId="Package\Tâche de flux de données\StageAgent.Outputs[Sortie d'erreur de source OLE DB].Columns[GroupMember]"
+                      name="GroupMember" />
+                    <outputColumn
+                      refId="Package\Tâche de flux de données\StageAgent.Outputs[Sortie d'erreur de source OLE DB].Columns[ScriptFramesetUrl]"
+                      dataType="wstr"
+                      length="255"
+                      lineageId="Package\Tâche de flux de données\StageAgent.Outputs[Sortie d'erreur de source OLE DB].Columns[ScriptFramesetUrl]"
+                      name="ScriptFramesetUrl" />
+                    <outputColumn
+                      refId="Package\Tâche de flux de données\StageAgent.Outputs[Sortie d'erreur de source OLE DB].Columns[ScriptFramesetName]"
+                      dataType="wstr"
+                      length="255"
+                      lineageId="Package\Tâche de flux de données\StageAgent.Outputs[Sortie d'erreur de source OLE DB].Columns[ScriptFramesetName]"
+                      name="ScriptFramesetName" />
+                    <outputColumn
+                      refId="Package\Tâche de flux de données\StageAgent.Outputs[Sortie d'erreur de source OLE DB].Columns[MaxChatSessions]"
+                      dataType="r8"
+                      lineageId="Package\Tâche de flux de données\StageAgent.Outputs[Sortie d'erreur de source OLE DB].Columns[MaxChatSessions]"
+                      name="MaxChatSessions" />
+                    <outputColumn
+                      refId="Package\Tâche de flux de données\StageAgent.Outputs[Sortie d'erreur de source OLE DB].Columns[MaxEmailSessions]"
+                      dataType="r8"
+                      lineageId="Package\Tâche de flux de données\StageAgent.Outputs[Sortie d'erreur de source OLE DB].Columns[MaxEmailSessions]"
+                      name="MaxEmailSessions" />
+                    <outputColumn
+                      refId="Package\Tâche de flux de données\StageAgent.Outputs[Sortie d'erreur de source OLE DB].Columns[AlwaysOnTop]"
+                      dataType="r8"
+                      lineageId="Package\Tâche de flux de données\StageAgent.Outputs[Sortie d'erreur de source OLE DB].Columns[AlwaysOnTop]"
+                      name="AlwaysOnTop" />
+                    <outputColumn
+                      refId="Package\Tâche de flux de données\StageAgent.Outputs[Sortie d'erreur de source OLE DB].Columns[FullScreen]"
+                      dataType="r8"
+                      lineageId="Package\Tâche de flux de données\StageAgent.Outputs[Sortie d'erreur de source OLE DB].Columns[FullScreen]"
+                      name="FullScreen" />
+                    <outputColumn
+                      refId="Package\Tâche de flux de données\StageAgent.Outputs[Sortie d'erreur de source OLE DB].Columns[WorkspaceWidth]"
+                      dataType="r8"
+                      lineageId="Package\Tâche de flux de données\StageAgent.Outputs[Sortie d'erreur de source OLE DB].Columns[WorkspaceWidth]"
+                      name="WorkspaceWidth" />
+                    <outputColumn
+                      refId="Package\Tâche de flux de données\StageAgent.Outputs[Sortie d'erreur de source OLE DB].Columns[WorkspaceHeight]"
+                      dataType="r8"
+                      lineageId="Package\Tâche de flux de données\StageAgent.Outputs[Sortie d'erreur de source OLE DB].Columns[WorkspaceHeight]"
+                      name="WorkspaceHeight" />
+                    <outputColumn
+                      refId="Package\Tâche de flux de données\StageAgent.Outputs[Sortie d'erreur de source OLE DB].Columns[ReadyAtLogin]"
+                      dataType="r8"
+                      lineageId="Package\Tâche de flux de données\StageAgent.Outputs[Sortie d'erreur de source OLE DB].Columns[ReadyAtLogin]"
+                      name="ReadyAtLogin" />
+                    <outputColumn
+                      refId="Package\Tâche de flux de données\StageAgent.Outputs[Sortie d'erreur de source OLE DB].Columns[WorkspaceOid]"
+                      dataType="wstr"
+                      length="255"
+                      lineageId="Package\Tâche de flux de données\StageAgent.Outputs[Sortie d'erreur de source OLE DB].Columns[WorkspaceOid]"
+                      name="WorkspaceOid" />
+                    <outputColumn
+                      refId="Package\Tâche de flux de données\StageAgent.Outputs[Sortie d'erreur de source OLE DB].Columns[CTISkills]"
+                      dataType="wstr"
+                      length="255"
+                      lineageId="Package\Tâche de flux de données\StageAgent.Outputs[Sortie d'erreur de source OLE DB].Columns[CTISkills]"
+                      name="CTISkills" />
+                    <outputColumn
+                      refId="Package\Tâche de flux de données\StageAgent.Outputs[Sortie d'erreur de source OLE DB].Columns[OutCampaigns]"
+                      dataType="nText"
+                      lineageId="Package\Tâche de flux de données\StageAgent.Outputs[Sortie d'erreur de source OLE DB].Columns[OutCampaigns]"
+                      name="OutCampaigns" />
+                    <outputColumn
+                      refId="Package\Tâche de flux de données\StageAgent.Outputs[Sortie d'erreur de source OLE DB].Columns[CoachRightLevel]"
+                      dataType="r8"
+                      lineageId="Package\Tâche de flux de données\StageAgent.Outputs[Sortie d'erreur de source OLE DB].Columns[CoachRightLevel]"
+                      name="CoachRightLevel" />
+                    <outputColumn
+                      refId="Package\Tâche de flux de données\StageAgent.Outputs[Sortie d'erreur de source OLE DB].Columns[CurrentOutQueue]"
+                      dataType="r8"
+                      lineageId="Package\Tâche de flux de données\StageAgent.Outputs[Sortie d'erreur de source OLE DB].Columns[CurrentOutQueue]"
+                      name="CurrentOutQueue" />
+                    <outputColumn
+                      refId="Package\Tâche de flux de données\StageAgent.Outputs[Sortie d'erreur de source OLE DB].Columns[WorkspaceAffectationExt]"
+                      dataType="wstr"
+                      length="255"
+                      lineageId="Package\Tâche de flux de données\StageAgent.Outputs[Sortie d'erreur de source OLE DB].Columns[WorkspaceAffectationExt]"
+                      name="WorkspaceAffectationExt" />
+                    <outputColumn
+                      refId="Package\Tâche de flux de données\StageAgent.Outputs[Sortie d'erreur de source OLE DB].Columns[DefaultOutCampaign]"
+                      dataType="wstr"
+                      length="255"
+                      lineageId="Package\Tâche de flux de données\StageAgent.Outputs[Sortie d'erreur de source OLE DB].Columns[DefaultOutCampaign]"
+                      name="DefaultOutCampaign" />
+                    <outputColumn
+                      refId="Package\Tâche de flux de données\StageAgent.Outputs[Sortie d'erreur de source OLE DB].Columns[IsReAssigned]"
+                      dataType="r8"
+                      lineageId="Package\Tâche de flux de données\StageAgent.Outputs[Sortie d'erreur de source OLE DB].Columns[IsReAssigned]"
+                      name="IsReAssigned" />
+                    <outputColumn
+                      refId="Package\Tâche de flux de données\StageAgent.Outputs[Sortie d'erreur de source OLE DB].Columns[AgentLightRight]"
+                      dataType="r8"
+                      lineageId="Package\Tâche de flux de données\StageAgent.Outputs[Sortie d'erreur de source OLE DB].Columns[AgentLightRight]"
+                      name="AgentLightRight" />
+                    <outputColumn
+                      refId="Package\Tâche de flux de données\StageAgent.Outputs[Sortie d'erreur de source OLE DB].Columns[AgentLightPlanningOid]"
+                      dataType="wstr"
+                      length="255"
+                      lineageId="Package\Tâche de flux de données\StageAgent.Outputs[Sortie d'erreur de source OLE DB].Columns[AgentLightPlanningOid]"
+                      name="AgentLightPlanningOid" />
+                    <outputColumn
+                      refId="Package\Tâche de flux de données\StageAgent.Outputs[Sortie d'erreur de source OLE DB].Columns[AgentLightExtensionId]"
+                      dataType="r8"
+                      lineageId="Package\Tâche de flux de données\StageAgent.Outputs[Sortie d'erreur de source OLE DB].Columns[AgentLightExtensionId]"
+                      name="AgentLightExtensionId" />
+                    <outputColumn
+                      refId="Package\Tâche de flux de données\StageAgent.Outputs[Sortie d'erreur de source OLE DB].Columns[RingMaxDialingDuration]"
+                      dataType="r8"
+                      lineageId="Package\Tâche de flux de données\StageAgent.Outputs[Sortie d'erreur de source OLE DB].Columns[RingMaxDialingDuration]"
+                      name="RingMaxDialingDuration" />
+                    <outputColumn
+                      refId="Package\Tâche de flux de données\StageAgent.Outputs[Sortie d'erreur de source OLE DB].Columns[RingMaxDialingAttempts]"
+                      dataType="r8"
+                      lineageId="Package\Tâche de flux de données\StageAgent.Outputs[Sortie d'erreur de source OLE DB].Columns[RingMaxDialingAttempts]"
+                      name="RingMaxDialingAttempts" />
+                    <outputColumn
+                      refId="Package\Tâche de flux de données\StageAgent.Outputs[Sortie d'erreur de source OLE DB].Columns[MaxSmsSessions]"
+                      dataType="r8"
+                      lineageId="Package\Tâche de flux de données\StageAgent.Outputs[Sortie d'erreur de source OLE DB].Columns[MaxSmsSessions]"
+                      name="MaxSmsSessions" />
+                    <outputColumn
+                      refId="Package\Tâche de flux de données\StageAgent.Outputs[Sortie d'erreur de source OLE DB].Columns[PasswordDate]"
+                      dataType="wstr"
+                      length="255"
+                      lineageId="Package\Tâche de flux de données\StageAgent.Outputs[Sortie d'erreur de source OLE DB].Columns[PasswordDate]"
+                      name="PasswordDate" />
+                    <outputColumn
+                      refId="Package\Tâche de flux de données\StageAgent.Outputs[Sortie d'erreur de source OLE DB].Columns[ProfileDetailed]"
+                      dataType="wstr"
+                      length="255"
+                      lineageId="Package\Tâche de flux de données\StageAgent.Outputs[Sortie d'erreur de source OLE DB].Columns[ProfileDetailed]"
+                      name="ProfileDetailed" />
+                    <outputColumn
+                      refId="Package\Tâche de flux de données\StageAgent.Outputs[Sortie d'erreur de source OLE DB].Columns[ProfileDetailedWithDesc]"
+                      dataType="wstr"
+                      length="255"
+                      lineageId="Package\Tâche de flux de données\StageAgent.Outputs[Sortie d'erreur de source OLE DB].Columns[ProfileDetailedWithDesc]"
+                      name="ProfileDetailedWithDesc" />
+                    <outputColumn
+                      refId="Package\Tâche de flux de données\StageAgent.Outputs[Sortie d'erreur de source OLE DB].Columns[MaxSocialNetworkSessions]"
+                      dataType="r8"
+                      lineageId="Package\Tâche de flux de données\StageAgent.Outputs[Sortie d'erreur de source OLE DB].Columns[MaxSocialNetworkSessions]"
+                      name="MaxSocialNetworkSessions" />
+                    <outputColumn
+                      refId="Package\Tâche de flux de données\StageAgent.Outputs[Sortie d'erreur de source OLE DB].Columns[Gender]"
+                      dataType="wstr"
+                      length="255"
+                      lineageId="Package\Tâche de flux de données\StageAgent.Outputs[Sortie d'erreur de source OLE DB].Columns[Gender]"
+                      name="Gender" />
+                    <outputColumn
+                      refId="Package\Tâche de flux de données\StageAgent.Outputs[Sortie d'erreur de source OLE DB].Columns[FirstName]"
+                      dataType="r8"
+                      lineageId="Package\Tâche de flux de données\StageAgent.Outputs[Sortie d'erreur de source OLE DB].Columns[FirstName]"
+                      name="FirstName" />
+                    <outputColumn
+                      refId="Package\Tâche de flux de données\StageAgent.Outputs[Sortie d'erreur de source OLE DB].Columns[LastName]"
+                      dataType="wstr"
+                      length="255"
+                      lineageId="Package\Tâche de flux de données\StageAgent.Outputs[Sortie d'erreur de source OLE DB].Columns[LastName]"
+                      name="LastName" />
+                    <outputColumn
+                      refId="Package\Tâche de flux de données\StageAgent.Outputs[Sortie d'erreur de source OLE DB].Columns[Address]"
+                      dataType="wstr"
+                      length="255"
+                      lineageId="Package\Tâche de flux de données\StageAgent.Outputs[Sortie d'erreur de source OLE DB].Columns[Address]"
+                      name="Address" />
+                    <outputColumn
+                      refId="Package\Tâche de flux de données\StageAgent.Outputs[Sortie d'erreur de source OLE DB].Columns[CP]"
+                      dataType="wstr"
+                      length="255"
+                      lineageId="Package\Tâche de flux de données\StageAgent.Outputs[Sortie d'erreur de source OLE DB].Columns[CP]"
+                      name="CP" />
+                    <outputColumn
+                      refId="Package\Tâche de flux de données\StageAgent.Outputs[Sortie d'erreur de source OLE DB].Columns[City]"
+                      dataType="wstr"
+                      length="255"
+                      lineageId="Package\Tâche de flux de données\StageAgent.Outputs[Sortie d'erreur de source OLE DB].Columns[City]"
+                      name="City" />
+                    <outputColumn
+                      refId="Package\Tâche de flux de données\StageAgent.Outputs[Sortie d'erreur de source OLE DB].Columns[Email]"
+                      dataType="wstr"
+                      length="255"
+                      lineageId="Package\Tâche de flux de données\StageAgent.Outputs[Sortie d'erreur de source OLE DB].Columns[Email]"
+                      name="Email" />
+                    <outputColumn
+                      refId="Package\Tâche de flux de données\StageAgent.Outputs[Sortie d'erreur de source OLE DB].Columns[Phone]"
+                      dataType="wstr"
+                      length="255"
+                      lineageId="Package\Tâche de flux de données\StageAgent.Outputs[Sortie d'erreur de source OLE DB].Columns[Phone]"
+                      name="Phone" />
+                    <outputColumn
+                      refId="Package\Tâche de flux de données\StageAgent.Outputs[Sortie d'erreur de source OLE DB].Columns[Phone1]"
+                      dataType="wstr"
+                      length="255"
+                      lineageId="Package\Tâche de flux de données\StageAgent.Outputs[Sortie d'erreur de source OLE DB].Columns[Phone1]"
+                      name="Phone1" />
+                    <outputColumn
+                      refId="Package\Tâche de flux de données\StageAgent.Outputs[Sortie d'erreur de source OLE DB].Columns[Phone2]"
+                      dataType="wstr"
+                      length="255"
+                      lineageId="Package\Tâche de flux de données\StageAgent.Outputs[Sortie d'erreur de source OLE DB].Columns[Phone2]"
+                      name="Phone2" />
+                    <outputColumn
+                      refId="Package\Tâche de flux de données\StageAgent.Outputs[Sortie d'erreur de source OLE DB].Columns[Birthday]"
+                      dataType="wstr"
+                      length="255"
+                      lineageId="Package\Tâche de flux de données\StageAgent.Outputs[Sortie d'erreur de source OLE DB].Columns[Birthday]"
+                      name="Birthday" />
+                    <outputColumn
+                      refId="Package\Tâche de flux de données\StageAgent.Outputs[Sortie d'erreur de source OLE DB].Columns[Picture]"
+                      dataType="wstr"
+                      length="255"
+                      lineageId="Package\Tâche de flux de données\StageAgent.Outputs[Sortie d'erreur de source OLE DB].Columns[Picture]"
+                      name="Picture" />
+                    <outputColumn
+                      refId="Package\Tâche de flux de données\StageAgent.Outputs[Sortie d'erreur de source OLE DB].Columns[customerOid]"
+                      dataType="wstr"
+                      length="255"
+                      lineageId="Package\Tâche de flux de données\StageAgent.Outputs[Sortie d'erreur de source OLE DB].Columns[customerOid]"
+                      name="customerOid" />
+                    <outputColumn
+                      refId="Package\Tâche de flux de données\StageAgent.Outputs[Sortie d'erreur de source OLE DB].Columns[createat]"
+                      dataType="wstr"
+                      length="255"
+                      lineageId="Package\Tâche de flux de données\StageAgent.Outputs[Sortie d'erreur de source OLE DB].Columns[createat]"
+                      name="createat" />
+                    <outputColumn
+                      refId="Package\Tâche de flux de données\StageAgent.Outputs[Sortie d'erreur de source OLE DB].Columns[deleteat]"
+                      dataType="wstr"
+                      length="255"
+                      lineageId="Package\Tâche de flux de données\StageAgent.Outputs[Sortie d'erreur de source OLE DB].Columns[deleteat]"
+                      name="deleteat" />
+                    <outputColumn
+                      refId="Package\Tâche de flux de données\StageAgent.Outputs[Sortie d'erreur de source OLE DB].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Tâche de flux de données\StageAgent.Outputs[Sortie d'erreur de source OLE DB].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Tâche de flux de données\StageAgent.Outputs[Sortie d'erreur de source OLE DB].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Tâche de flux de données\StageAgent.Outputs[Sortie d'erreur de source OLE DB].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+          </components>
+          <paths>
+            <path
+              refId="Package\Tâche de flux de données.Paths[Sortie de source OLE DB]"
+              endId="Package\Tâche de flux de données\DimAgent.Inputs[Entrée de destination OLE DB]"
+              name="Sortie de source OLE DB"
+              startId="Package\Tâche de flux de données\StageAgent.Outputs[Sortie de source OLE DB]" />
+          </paths>
+        </pipeline>
+      </DTS:ObjectData>
+    </DTS:Executable>
+  </DTS:Executables>
+  <DTS:DesignTimeProperties><![CDATA[<?xml version="1.0"?>
+<!--This CDATA section contains the layout information of the package. The section includes information such as (x,y) coordinates, width, and height.-->
+<!--If you manually edit this section and make a mistake, you can delete it. -->
+<!--The package will still be able to load normally but the previous layout information will be lost and the designer will automatically re-arrange the elements on the design surface.-->
+<Objects
+  Version="8">
+  <!--Each node below will contain properties that do not affect runtime behavior.-->
+  <Package
+    design-time-name="Package">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph">
+        <NodeLayout
+          Size="200,42"
+          Id="Package\Tâche de flux de données"
+          TopLeft="169,160" />
+      </GraphLayout>
+    </LayoutInfo>
+  </Package>
+  <TaskHost
+    design-time-name="Package\Tâche de flux de données">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        <NodeLayout
+          Size="133,42"
+          Id="Package\Tâche de flux de données\StageAgent"
+          TopLeft="103,79" />
+        <NodeLayout
+          Size="125,42"
+          Id="Package\Tâche de flux de données\DimAgent"
+          TopLeft="418,64" />
+        <EdgeLayout
+          Id="Package\Tâche de flux de données.Paths[Sortie de source OLE DB]"
+          TopLeft="236,100">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="182,-15"
+              Start="0,0"
+              End="174.5,-15">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="87,0" />
+                  <mssgle:CubicBezierSegment
+                    Point1="87,0"
+                    Point2="91,0"
+                    Point3="91,-4" />
+                  <mssgle:LineSegment
+                    End="91,-11" />
+                  <mssgle:CubicBezierSegment
+                    Point1="91,-11"
+                    Point2="91,-15"
+                    Point3="95,-15" />
+                  <mssgle:LineSegment
+                    End="174.5,-15" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\Tâche de flux de données\StageAgent">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Tâche de flux de données\DimAgent">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+</Objects>]]></DTS:DesignTimeProperties>
+</DTS:Executable>

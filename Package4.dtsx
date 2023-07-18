@@ -1,0 +1,92 @@
+﻿<?xml version="1.0"?>
+<DTS:Executable xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:refId="Package"
+  DTS:CreationDate="5/31/2023 4:28:08 PM"
+  DTS:CreationName="Microsoft.Package"
+  DTS:CreatorComputerName="DESKTOP-57MB2CN"
+  DTS:CreatorName="DESKTOP-57MB2CN\pc"
+  DTS:DTSID="{E173E70D-05D0-4B37-9E4D-CBA755CF24DC}"
+  DTS:ExecutableType="Microsoft.Package"
+  DTS:LastModifiedProductVersion="15.0.2000.180"
+  DTS:LocaleID="1036"
+  DTS:ObjectName="Package4"
+  DTS:PackageType="5"
+  DTS:VersionBuild="3"
+  DTS:VersionGUID="{36515CA9-F3F8-4CF3-97AF-B244C2ADC32C}">
+  <DTS:Property
+    DTS:Name="PackageFormatVersion">8</DTS:Property>
+  <DTS:ConnectionManagers>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[DESKTOP-57MB2CN\INTELCIA.finaldatawarhouse.testconn 1]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{99A90DEF-A9AE-4B08-9921-88AFBEC52E2A}"
+      DTS:ObjectName="DESKTOP-57MB2CN\INTELCIA.finaldatawarhouse.testconn 1">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectRetryCount="1"
+          DTS:ConnectRetryInterval="5"
+          DTS:ConnectionString="Data Source=DESKTOP-57MB2CN\INTELCIA;User ID=testconn;Initial Catalog=finaldatawarhouse;Provider=SQLNCLI11.1;Persist Security Info=True;Auto Translate=False;">
+          <DTS:Password
+            DTS:Name="Password"
+            Sensitive="1"
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA7p+JL3ZUdEG0cIld2WHOEAAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAABkOcRbjX4/j9ayEspQwT9PqcbYPWsFL4anuNCQmzbc9AAAAAAOgAAAAAIAACAAAADz6pCUYh/+R447PE9Z1WjvVxdxUIo6CxVi2FFNcTnKMCAAAABA9rnBQctw3DZXE1z5582mXB/pHSDPdwM6uM26G8vrHUAAAAB78yLnsMh1mKF7ywrb720TJhg54ALCi9O7XAu8rC0wQ5fdlTcWcwVnCFEuex9ftwH0EqGaBShr3WVlIKFi5PIn</DTS:Password>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[DESKTOP-57MB2CN\INTELCIA.StagingArea.testconn 1]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{C2F2C7CA-3E9A-43B0-BA10-BFF2EEFAACC6}"
+      DTS:ObjectName="DESKTOP-57MB2CN\INTELCIA.StagingArea.testconn 1">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectRetryCount="1"
+          DTS:ConnectRetryInterval="5"
+          DTS:ConnectionString="Data Source=DESKTOP-57MB2CN\INTELCIA;User ID=testconn;Initial Catalog=StagingArea;Provider=SQLNCLI11.1;Persist Security Info=True;Auto Translate=False;">
+          <DTS:Password
+            DTS:Name="Password"
+            Sensitive="1"
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA7p+JL3ZUdEG0cIld2WHOEAAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAAC46ZtGSxhn0GwNWXyXT8aWH78Xmdy6cvtCDsityKMTFwAAAAAOgAAAAAIAACAAAABaKgRs+H/2g4NkFuH2fXS+eajYLp2MkZkxv+hu7eiSPiAAAAAgOvHy2BdsBec7yLw4cajiPHtcWVWeywP8oqG9s7XLREAAAAD7NaZ5KmA5EGDZDdeq1Ew0LRM7eNO2qEWpuU17j3c/2ENrKiKWeBkPOoSaBI3opvQUJInbuQfRwq3LaHbgcA3G</DTS:Password>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+  </DTS:ConnectionManagers>
+  <DTS:Variables />
+  <DTS:Executables>
+    <DTS:Executable
+      DTS:refId="Package\Tâche de flux de données"
+      DTS:CreationName="Microsoft.Pipeline"
+      DTS:Description="Tâche de flux de données"
+      DTS:DTSID="{6F464951-EF34-48C8-B006-790328697ED1}"
+      DTS:ExecutableType="Microsoft.Pipeline"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Tâche de flux de données"
+      DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <pipeline
+          version="1" />
+      </DTS:ObjectData>
+    </DTS:Executable>
+  </DTS:Executables>
+  <DTS:DesignTimeProperties><![CDATA[<?xml version="1.0"?>
+<!--This CDATA section contains the layout information of the package. The section includes information such as (x,y) coordinates, width, and height.-->
+<!--If you manually edit this section and make a mistake, you can delete it. -->
+<!--The package will still be able to load normally but the previous layout information will be lost and the designer will automatically re-arrange the elements on the design surface.-->
+<Objects
+  Version="8">
+  <!--Each node below will contain properties that do not affect runtime behavior.-->
+  <Package
+    design-time-name="Package">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph">
+        <NodeLayout
+          Size="200,42"
+          Id="Package\Tâche de flux de données"
+          TopLeft="176,132" />
+      </GraphLayout>
+    </LayoutInfo>
+  </Package>
+</Objects>]]></DTS:DesignTimeProperties>
+</DTS:Executable>
